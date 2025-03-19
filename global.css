@@ -1,8 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-creamy: #FFFAF5;
+  --color-tan: #D7BF92;
+  --color-blush: #FFC8BD;
+  --color-sage: #7F9588;
+  --color-olive: #5E5B38;
+  --color-darkGreen: #0A2522;
+}
 body {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
   margin: 0 auto;
   font-size: 16px;
+  background:var(--color-creamy);
   line-height: 1.65;
   word-break: break-word;
   font-kerning: auto;
@@ -11,4 +22,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   hyphens: auto;
+ 
+}
+
+.vision{
+  background-color:var(--color-sage);
+  height:25rem ;
+}
+html {
+  overflow-y: scroll;
 }
