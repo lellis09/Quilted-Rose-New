@@ -14,7 +14,7 @@ const Cta = ({title}) => {
                 
                 />
                 <div className="border border-2 border-creamy w-3/4 h-3/4 relative z-10 flex justify-center items-center ">
-                    <h1 className="text-creamy z-10 text-xl sm:text-2xl px-10">{title}</h1>
+                    <h1 className="text-creamy z-10 text-xl sm:text-3xl px-10">{title}</h1>
                 </div>
         </section>
     )

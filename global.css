@@ -25,9 +25,25 @@ body {
  
 }
 
+/* vision section home page */
 .vision{
+  padding: ;
   background-color:var(--color-sage);
   height:25rem ;
+  border-top: 1.5px var(--color-olive) solid;
+  border-bottom: 1.5px var(--color-olive) solid;
+  color: var(--color-creamy);
+}
+
+@media (max-width: 640px) {
+  .vision{
+    /* border: 5px solid red; */
+    height:35rem;
+  }
+}
+
+.vision .quote{
+  color:var(--color-darkGreen);
 }
 html {
   overflow-y: scroll;
