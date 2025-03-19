@@ -11,6 +11,9 @@ const Hero = ({ title, imageSrc}) => {
                 // height={500}
                 layout="fill"
                 objectFit="cover"
+                priority
+                quality={75}
+                // placeholder="blur"
                 className="absolute top-0 left-0 w-full h-full opacity-50"
                
                />

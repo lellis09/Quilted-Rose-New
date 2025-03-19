@@ -42,8 +42,22 @@ body {
   }
 }
 
+
+
+/* quotes */
 .vision .quote{
   color:var(--color-darkGreen);
+}
+.quote{
+  text-transform: none;
+
+}
+.vision .header{
+  color:var(--color-creamy)
+}
+
+h1, h2 , h3{
+  text-transform: uppercase ;
 }
 html {
   overflow-y: scroll;

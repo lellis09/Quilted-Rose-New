@@ -21,7 +21,7 @@ const Column2 = ({ className="", title, text, text2, imageSrc, quote}) => {
             </div>
             <div className="pt-6 md:pt-2 w-full h-full flex flex-col items-center justify-start md:pl-20 ">
                 <section className="w-full ">
-                    <h1 className="text-4xl text-darkGreen py-2">{title}</h1>
+                    <h1 className="header text-4xl text-darkGreen py-2">{title}</h1>
                     <p className="text-xl pt-4 w-[95%]">{text}</p>
                     <p className="text-xl pt-4 ">{text2}</p>
                 </section>

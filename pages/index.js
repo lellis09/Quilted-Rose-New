@@ -7,6 +7,7 @@ import Cards2 from "../components/sections/cards2"
 import Cta from "../components/sections/cta"
 import Column1 from "../components/sections/column1"
 import Contact from "../components/sections/contact"
+import Footer from "../components/layout/footer"
 
 function Home() {
  
@@ -59,6 +60,7 @@ function Home() {
       <Contact 
         title={pages.home.contact.title}
       />
+      <Footer />
     </main>
   )
 }
