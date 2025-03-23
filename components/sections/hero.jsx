@@ -17,7 +17,7 @@ const Hero = ({ title, imageSrc}) => {
                 className="absolute top-0 left-0 w-full h-full opacity-50"
                
                />
-               <div className="border border-2 border-creamy w-3/4 h-3/4 relative z-10 flex flex-col justify-center items-center rounded-md">
+               <div className=" border-creamy w-3/4 h-3/4 relative z-10 flex flex-col justify-center items-center rounded-md">
                     <div className="">
                         {imageSrc && (
                         <Image src={imageSrc} width={100} height={100} />

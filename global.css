@@ -34,34 +34,45 @@ body {
   border-bottom: 1.5px var(--color-olive) solid;
   color: var(--color-creamy);
 }
+@media (max-width:640px){
+  .vision-txt{
+    position: relative;
+    border: 1px solid darkblue;
+    bottom: 20px;
+  }
+  .quote{
+    font-size: 26px;
+  }
+}
 
 @media (max-width: 768px) {
   .vision{
     /* border: 5px solid red; */
     height:35rem;
   }
+  .quote{
+    padding-bottom: 1rem;
+  }
+
 }
 
 @media (min-width:1024px){
   .vision{
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     padding-left: 0;
   }
   .quote{
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     font-size: 28px;
   }
   
 }
 @media (min-width:1280px){
   .vision{
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     padding-left: 40px;
   }
 }
-
-
-
 
 /* quotes */
 .vision .quote{
@@ -76,9 +87,23 @@ body {
   color:var(--color-creamy)
 }
 
+
+/* text-headers */
 h1, h2 , h3{
   text-transform: uppercase ;
 }
 html {
   overflow-y: scroll;
+}
+
+/* about section */
+@layer utilities {
+  /* Apply styles only between 640px and 1023px */
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .image {
+      width: 500px; /* Example width */
+      height: auto; /* Adjust as needed */
+      
+    }
+  }
 }

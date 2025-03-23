@@ -26,7 +26,7 @@ function Home() {
         imageSrc={"/lisa-walker-1.png"}
       />
       <Column2 
-        className="vision"
+        className="vision "
         title={pages.home.vision.title}
         text={pages.home.vision.text}
         quote={pages.home.vision.quote}
