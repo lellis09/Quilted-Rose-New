@@ -4,7 +4,7 @@ import Image from "next/image";
 const Column2 = ({ className="", title, text, text2, imageSrc, quote}) => {
     return(
         <main className={`flex flex-col items-center lg:flex-row ${className} px-10 pt-10 lg:h-[34rem] lg:mb-12 lg:mt-8`}>
-            <div className="w-full lg:w-[40%]  h-96 sm:h-[600px] relative rounded-xl pb-6 sm:pb-0 image ">
+            <div className="w-full lg:w-[40%]  h-96 sm:h-[600px] relative rounded-xl pb-6 sm:pb-6 image ">
              {/* If there's an image, show it; otherwise, show a quote */}
              {imageSrc ? (
                 <div className={`w-full h-[600px] md:w-1/2  ${className} `}>

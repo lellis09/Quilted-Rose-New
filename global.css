@@ -47,7 +47,7 @@ body {
 
 @media (max-width: 768px) {
   .vision{
-    /* border: 5px solid red; */
+    border: 5px solid red;
     height:35rem;
   }
   .quote{
@@ -55,6 +55,17 @@ body {
   }
 
 }
+
+  @layer utilities {
+    /* Apply styles only between 640px and 1023px */
+    @media (min-width: 640px) and (max-width: 1023px) {
+      .vision {
+       border: 3px dotted darkcyan;
+        height: 45rem; /* Adjust as needed */
+        
+      }
+    }
+  }
 
 @media (min-width:1024px){
   .vision{
