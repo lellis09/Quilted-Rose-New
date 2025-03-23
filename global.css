@@ -35,12 +35,31 @@ body {
   color: var(--color-creamy);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .vision{
     /* border: 5px solid red; */
     height:35rem;
   }
 }
+
+@media (min-width:1024px){
+  .vision{
+    border: 1px solid aqua;
+    padding-left: 0;
+  }
+  .quote{
+    border: 1px solid aqua;
+    font-size: 28px;
+  }
+  
+}
+@media (min-width:1280px){
+  .vision{
+    border: 1px solid salmon;
+    padding-left: 40px;
+  }
+}
+
 
 
 
@@ -50,6 +69,7 @@ body {
 }
 .quote{
   text-transform: none;
+  
 
 }
 .vision .header{
