@@ -32,7 +32,7 @@ function Home() {
         quote={pages.home.vision.quote}
       
       />
-      <div className="flex flex-col gap-y-8 lg:flex-row lg:gap-x-8 relative md:justify-center items-stretch pb-20 z-10 bottom-6 lg:bottom-24 px-10 ">
+      <div className="flex flex-col gap-y-8 lg:flex-row lg:gap-x-8 relative md:items-center lg:justify-center items-stretch pb-20 z-10 bottom-6 lg:bottom-24 px-10 ">
         <Cards2
           imageSrc={"/6.svg"}
           title={pages.home.card1.title}

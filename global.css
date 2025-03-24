@@ -27,7 +27,7 @@ body {
 
 /* vision section home page */
 .vision{
-  padding: ;
+  padding: 12px, 40px ;
   background-color:var(--color-sage);
   height:25rem ;
   border-top: 1.5px var(--color-olive) solid;
@@ -50,18 +50,21 @@ body {
     /* border: 5px solid red; */
     height:35rem;
   }
-  .quote{
+  .quote,
+  .quote-cta{
     padding-bottom: 1rem;
   }
 
 }
+/* section size for galaxy 24 ultra */
 @media (max-width: 450px) {
   .vision{
     border: 5px solid aqua;
     height:40rem;
     padding-bottom: 20px;
   }
-  .quote{
+  .quote,
+  .quote-cta{
     padding-bottom: 1rem;
   }
 
@@ -83,7 +86,8 @@ body {
     /* border: 1px solid aqua; */
     padding-left: 0;
   }
-  .quote{
+  .quote,
+  .quote-cta{
     /* border: 1px solid aqua; */
     font-size: 28px;
   }
@@ -100,7 +104,8 @@ body {
 .vision .quote{
   color:var(--color-darkGreen);
 }
-.quote{
+.quote,
+.quote-cta{
   text-transform: none;
   
 
@@ -128,4 +133,39 @@ html {
       
     }
   }
+}
+
+/* cards section */
+
+@layer utilities {
+  /* Apply styles only between 640px and 1023px */
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .card-title{
+      font-size: 18px;
+      /* padding-bottom: 1.5rem;
+      padding-top:1.5rem ;
+      border: solid 1px gray;
+      display: flex;
+      align-items: center; */
+    }
+  }
+}
+
+@layer utilities {
+  /* Apply styles only between 640px and 1023px */
+  @media (min-width: 551px) and (max-width: 1024px) {
+    .card-txt{
+      font-size:18px;
+    }
+}
+}
+/* @media(max-width:1024px) {
+  .card-txt{
+    font-size:18px;
+  }
+} */
+
+
+.card-txt-alt{
+  font-size: 15px;
 }
