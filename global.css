@@ -47,7 +47,17 @@ body {
 
 @media (max-width: 768px) {
   .vision{
-    border: 5px solid red;
+    /* border: 5px solid red; */
+    height:35rem;
+  }
+  .quote{
+    padding-bottom: 1rem;
+  }
+
+}
+@media (max-width: 340px) {
+  .vision{
+    border: 5px solid aqua;
     height:35rem;
   }
   .quote{
