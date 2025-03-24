@@ -59,6 +59,7 @@ body {
   .vision{
     border: 5px solid aqua;
     height:40rem;
+    padding-bottom: 20px;
   }
   .quote{
     padding-bottom: 1rem;
