@@ -58,7 +58,7 @@ body {
 @media (max-width: 450px) {
   .vision{
     border: 5px solid aqua;
-    height:35rem;
+    height:40rem;
   }
   .quote{
     padding-bottom: 1rem;
