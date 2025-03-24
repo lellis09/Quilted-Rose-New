@@ -55,7 +55,7 @@ body {
   }
 
 }
-@media (max-width: 340px) {
+@media (max-width: 450px) {
   .vision{
     border: 5px solid aqua;
     height:35rem;
