@@ -9,6 +9,7 @@ import Column1 from "../components/sections/column1"
 import Contact from "../components/sections/contact"
 import Footer from "../components/layout/footer"
 import Button from "../components/Button"
+import Nav from "../components/layout/nav";
 
 function Home() {
  
@@ -30,11 +31,11 @@ function Home() {
           text2={pages.home.about.text2}
           text3={pages.home.about.text3}
           imageSrc={"/lisa-walker-1.png"}
-          imageClassName="lg:h-2"
+          imageClassName="h-[600px]"
           textClassName="lg:pt-4"
-          decClassName="h-[20rem]"
+          decClassName="h-[2rem]"
         />
-        <Button className="bg-darkGreen w-48 relative lg:bottom-15 lg:left-4">About Dr. Walker</Button>
+        <Button className="bg-darkGreen w-48 relative xl:bottom-15 lg:left-4">About Dr. Walker</Button>
       </div>
       
       <Column2 
