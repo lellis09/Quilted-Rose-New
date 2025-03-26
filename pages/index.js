@@ -13,7 +13,10 @@ function Home() {
  
   return (
     <main className="flex flex-col"> 
-      <Banner />
+      <Banner
+        email={pages.banner.email.title}
+        phone={pages.banner.phone.title}
+      />
       <LogoContainer />
       <Hero 
         title={pages.home.hero.title} 

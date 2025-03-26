@@ -71,7 +71,10 @@ export const pages = {
         email:{title:''},
     },
     banner:{
-        hero:{title:'' },
+        phone:{title:'313-403-3900'},
+        email:{title:'drlisa@quiltedrose.org'},
+    },
+    footer:{
         address:{title:''},
         phone:{title:''},
         email:{title:''},
