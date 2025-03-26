@@ -72,8 +72,8 @@ function Home() {
       />
       <Column1 
         title={pages.home.belief.title}
-        text={pages.home.belief.text}
-        textB={pages.home.belief.textB}
+        text1={pages.home.belief.text1}
+        text2={pages.home.belief.text2}
       />
       <Contact 
         title={pages.home.contact.title}
