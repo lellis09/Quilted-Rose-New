@@ -1,13 +1,25 @@
 import react from "react";
 import Image from "next/image";
+import Button from "../Button.js"
+import DecorativeL from "./decorativeL.jsx";
 
-const Column2 = ({ className="", title, text, text2, imageSrc, quote}) => {
+const Column2 = ({ 
+    className="", 
+    title, 
+    text, 
+    text2, 
+    text3,
+    imageSrc, 
+    quote, 
+    imageClassName ="", 
+    textClassName ="",
+    decClassName = ""}) => {
     return(
         <main className={`flex flex-col items-center lg:flex-row ${className} px-10 pt-10 lg:h-[34rem] lg:mb-12 lg:mt-8`}>
-            <div className="w-full lg:w-[40%]  h-96 sm:h-[600px] relative rounded-xl pb-6 sm:pb-6 image ">
+            <div className="w-full lg:w-[40%] h-96 sm:h-[600px] relative rounded-xl pb-6 sm:pb-6 image ">
              {/* If there's an image, show it; otherwise, show a quote */}
                 {imageSrc ? (
-                    <div className={`w-full h-[600px] md:w-1/2  ${className} `}>
+                    <div className={`${imageClassName}`}>
                         <Image src={imageSrc} alt="title" layout="fill" objectFit= "cover" className="rounded-xl "  />         
                         
                     </div>
@@ -20,13 +32,16 @@ const Column2 = ({ className="", title, text, text2, imageSrc, quote}) => {
                 
                 
             </div>
-            <div className="w-[2px] h-[8rem] bg-olive relative left-10 bottom-16 rotate-y-<90>"></div>
-            <div className="pt-0 lg:pt-2 w-full h-full lg:w-[60%] flex flex-col items-center justify-start md:pl-20 pb-6">
-                <section className="w-full ">
-                    <h1 className="header text-4xl text-darkGreen py-2">{title}</h1>
+            <DecorativeL decClassName={decClassName} />
+            <div className={`pt-0 lg:pt-2 w-full h-full lg:w-[60%] flex flex-col items-center justify-start md:pl-20 pb-6 `}>
+                <h1 className="header text-4xl text-darkGreen py-2 ">{title}</h1>
+                <section className={`w-full ${textClassName} `}>
+                    
                     <p className="text-xl pt-4 w-[95%]">{text}</p>
                     <p className="text-xl pt-4 ">{text2}</p>
+                    <p className="text-xl pt-4 ">{text3}</p>
                 </section>
+                
             </div>
         </main>
     )

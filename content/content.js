@@ -3,7 +3,8 @@ export const pages = {
         hero:{title:'Welcome to Quilted Rose' },
         about:{title:'Meet Dr. Lisa Walker', 
                 text:'I am Dr. Lisa Walker, a psychologist and licensed mental health counselor (LPC) with more than 20 years of experience. I respect the individual as part of the collective community. I believe that healing or mental health treatment cannot occur alone. Black and Indigenous people heal in community.', 
-                text2:'I intentionally serve all Black and Indigenous adults with reverence and compassion. I place a special emphasis on emotionally supporting female-identifying persons who work in the creative, health care, mental health and education fields.'},
+                text2:'I intentionally serve all Black and Indigenous adults with reverence and compassion. I place a special emphasis on emotionally supporting female-identifying persons who work in the creative, health care, mental health and education fields.',
+                text3:'I intentionally serve all Black and Indigenous adults with reverence and compassion. I place a special emphasis on emotionally supporting female-identifying persons who work in the creative, health care, mental health and education fields.'},
         vision:{title:'Our Vision', 
                 text:'My vision is to collaborate with Black and Indigenous individuals as we navigate everyday challenges—grief and loss, anxiety, political burnout—along with collective trauma and systemic marginalization. I offer several ways to support and partner with you on this journey:', 
                 quote:'“You will be understood and challenged. You will grow and be uncomfortable.” -Dr. Lisa Walker'},
@@ -71,8 +72,8 @@ export const pages = {
         email:{title:''},
     },
     banner:{
-        phone:{title:'313-403-3900'},
-        email:{title:'drlisa@quiltedrose.org'},
+        phone:{phone:'313-403-3900'},
+        email:{email:'drlisa@quiltedrose.org'},
     },
     footer:{
         address:{title:''},

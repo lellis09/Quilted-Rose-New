@@ -1,6 +1,7 @@
 import react from "react";
 import Image from "next/image";
 import { pages } from "/content/content.js"
+import Button from "../Button.js";
 
 const Contact = ({title}) => {
     return(
@@ -23,7 +24,9 @@ const Contact = ({title}) => {
                 <div className="bg-creamy w-full h-12 rounded-md"></div>
                 <div className="bg-creamy w-full h-12 rounded-md"></div>
                 <div className="bg-creamy w-full h-40 rounded-md"></div>
+                <Button className="bg-blush w-48">Book Now</Button>
             </section>
+            
         </main>
     )
 }
