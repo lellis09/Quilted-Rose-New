@@ -6,7 +6,7 @@ import DecorativeL from "./decorativeL.jsx";
 const Column2 = ({ 
     className="", 
     title, 
-    text, 
+    text1, 
     text2, 
     text3,
     imageSrc, 
@@ -37,7 +37,7 @@ const Column2 = ({
                 <h1 className="header text-4xl text-darkGreen py-2 ">{title}</h1>
                 <section className={`w-full ${textClassName} `}>
                     
-                    <p className="text-xl pt-4 w-[95%]">{text}</p>
+                    <p className="text-xl pt-4 w-[95%]">{text1}</p>
                     <p className="text-xl pt-4 ">{text2}</p>
                     <p className="text-xl pt-4 ">{text3}</p>
                 </section>

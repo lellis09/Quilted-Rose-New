@@ -22,15 +22,15 @@ const About = () => {
         />
         <LogoContainer />
         <Hero 
-          title={pages.home.hero.title} 
+          title={pages.about.hero.title} 
           imageSrc={"floral-el.svg"}
           />
         <div className="flex flex-col items-center ">
           <Column2 
-            title={pages.home.about.title}
-            text={pages.home.about.text}
-            text2={pages.home.about.text2}
-            text3={pages.home.about.text3}
+            title={pages.about.about.title}
+            text1={pages.about.about.text1}
+            text2={pages.about.about.text2}
+            text3={pages.about.about.text3}
             imageSrc={"/lisa-walker-1.png"}
             imageClassName="h-[600px]"
             textClassName="lg:pt-4"

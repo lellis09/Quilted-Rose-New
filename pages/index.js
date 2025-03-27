@@ -27,7 +27,7 @@ function Home() {
       <div className="flex flex-col items-center ">
         <Column2 
           title={pages.home.about.title}
-          text={pages.home.about.text}
+          text1={pages.home.about.text1}
           text2={pages.home.about.text2}
           text3={pages.home.about.text3}
           imageSrc={"/lisa-walker-1.png"}
@@ -41,7 +41,7 @@ function Home() {
       <Column2 
         className="vision "
         title={pages.home.vision.title}
-        text={pages.home.vision.text}
+        text1={pages.home.vision.text1}
         quote={pages.home.vision.quote}
       
       />
