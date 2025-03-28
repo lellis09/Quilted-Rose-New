@@ -171,3 +171,8 @@ html {
 .card-txt-alt{
   font-size: 15px;
 }
+
+/* service cards */
+.ser-Border{
+  border-top: 1px solid var(--color-olive);
+}
