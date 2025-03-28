@@ -34,12 +34,15 @@ const Services = () => {
         <Bullet
               text1={pages.services.bullet.text1}
               text2={pages.services.bullet.text2}
-              points={[
-                {point1:pages.services.bullet.point1, 
+              points={{
+                 point1:pages.services.bullet.point1, 
                  point2:pages.services.bullet.point2,
-                 point3:pages.services.bullet.point3  
-                }
-              ]}
+                 point3:pages.services.bullet.point3,  
+                 point4:pages.services.bullet.point4,  
+                 point5:pages.services.bullet.point5,  
+                 point6:pages.services.bullet.point6,  
+                
+              }}
           />
       </div>
         
