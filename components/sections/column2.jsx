@@ -20,7 +20,7 @@ const Column2 = ({
              {/* If there's an image, show it; otherwise, show a quote */}
                 {imageSrc ? (
                     <div className={`${imageClassName}`}>
-                        <Image src={imageSrc} alt="title" layout="fill" objectFit= "cover" className="rounded-xl "  />         
+                        <Image src={imageSrc} alt="title" layout="fill" objectFit= "cover" className="rounded-xl" />         
                         
                     </div>
                 ) : (

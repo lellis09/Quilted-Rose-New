@@ -176,3 +176,13 @@ html {
 .ser-Border{
   border-top: 1px solid var(--color-olive);
 }
+
+/* resources page */
+
+.reads{
+  border: solid 1px var(--color-blush);
+}
+
+.reads-title{
+  padding-bottom: 1rem;
+}

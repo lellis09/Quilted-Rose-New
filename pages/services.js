@@ -8,11 +8,12 @@ import Column1 from "../components/sections/column1"
 import Button from "../components/Button"
 import Bullet from "../components/sections/bullet"
 import ColumnAlt from "../components/sections/columnAlt"
+import Points from "../components/sections/points";
 
 const Services = () => {
     return(
         <main className="flex flex-col">
-        <Banner
+       <Banner
             email={pages.banner.email.email} 
             phone={pages.banner.phone.phone}
       />
@@ -33,6 +34,12 @@ const Services = () => {
         <Bullet
               text1={pages.services.bullet.text1}
               text2={pages.services.bullet.text2}
+              points={[
+                {point1:pages.services.bullet.point1, 
+                 point2:pages.services.bullet.point2,
+                 point3:pages.services.bullet.point3  
+                }
+              ]}
           />
       </div>
         
