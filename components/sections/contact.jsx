@@ -21,6 +21,9 @@ const Contact = ({title}) => {
             </div>
             <section className=" flex flex-col bg-olive items-center px-10 gap-y-8 w-full h-[500px] md:w-[60%] justify-center">
                 <h2 className="text-creamy text-4xl">{title}</h2>
+                <form>
+                    
+                </form>
                 <div className="bg-creamy w-full h-12 rounded-md"></div>
                 <div className="bg-creamy w-full h-12 rounded-md"></div>
                 <div className="bg-creamy w-full h-40 rounded-md"></div>

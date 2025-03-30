@@ -9,7 +9,7 @@ const Nav = () => {
       <Link href="/services" className="text-md text-darkGreen hover:underline">Services</Link>
       <Link href="/resources" className="text-md text-darkGreen hover:underline">Resources</Link>
       <Link href="/faq" className="text-md text-darkGreen hover:underline">FAQ</Link>
-      <Link href="/contact" className="text-md text-darkGreen hover:underline">Contact</Link>
+      <Link href="/contactUs" className="text-md text-darkGreen hover:underline">Contact</Link>
     </nav>
   );
 };

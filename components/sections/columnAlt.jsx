@@ -2,10 +2,11 @@ import react from "react";
 import Image from "next/image";
 import Accordian from "./accordian";
 import { pages } from "../../content/content";
+import Button from "/components/Button.js"
 
-const ColumnAlt = ({ className="", title, text1, imageSrc, }) => {
+const ColumnAlt = ({ className="", title, text1, imageSrc,  faqs = [] }) => {
     return(
-        <main className={`flex flex-col items-center md:flex-row ${className} lg:pr-10 h-full lg:h-[30rem] lg:mb-12 lg:mt-8 w-full`}>
+        <main className={`flex flex-col items-center md:flex-row ${className} lg:pr-10 h-full lg:h-[30rem] lg:mb-12 w-full`}>
             <div className="w-full md:w-3/4 h-[600px] lg:h-full relative rounded-xl  ">
               <div className={`w-full h-full ${className} `}>
                     <Image src={imageSrc} alt="title" layout="fill" objectFit= "cover" className=""  />         
@@ -18,19 +19,14 @@ const ColumnAlt = ({ className="", title, text1, imageSrc, }) => {
                     <p className="lg:pr-10 text-left text-xl pt-4 pl-4">{text1}</p>
 
                 </section>
+                {/* FAQ Accordions */}
                 <div className="flex flex-col justify-center gap-y-4 items-start w-full pt-8">
-                    <Accordian 
-                        className="ser-Border"
-                        heading={pages.services.service1.heading}
-                    />
-                    <Accordian 
-                        className="ser-Border"
-                        heading={pages.services.service2.heading}
-                    />
-                    <Accordian 
-                        className="ser-Border"
-                        heading={pages.services.service3.heading}
-                    />
+                    {faqs.map((faq, index) => (
+                        <Accordian key={index} className="ser-Border" heading={faq.heading} subtitle={faq.subtitle} />
+                    ))}
+                    <div className="flex justify-center pt-8 lg:ml-40 xl:ml-72">
+                        <Button className="bg-blush w-48 relative ">Book Now</Button>
+                     </div>
                 </div>
             </div>
         </main>

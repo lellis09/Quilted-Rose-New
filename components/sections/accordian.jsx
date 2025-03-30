@@ -6,7 +6,7 @@ const Accordian = ({heading, subtitle, className =""}) => {
         <section className={`flex justify-between ${className} w-full pt-4 pl-4 pr-16 `}>
             <div className="flex flex-col">
                 <h3 className="text-xl lg:text-2xl text-olive">{heading}</h3>
-                <p>{subtitle}</p>
+                <p className="text-darkGreen">{subtitle}</p>
             </div>
             <div className="">
                 <FaInbox />

@@ -47,9 +47,9 @@ const Services = () => {
       </div>
         
         <div className="">
-        <Cta
-            title={pages.home.cta.quote}
-        />
+            <Cta
+                title={pages.home.cta.quote}
+            />
         </div>
         <ColumnAlt 
             title={pages.services.other.title}
@@ -57,6 +57,12 @@ const Services = () => {
             text2={pages.home.about.text2}
             text3={pages.home.about.text3}
             imageSrc={"/lisa-walker-1.png"}
+            faqs={[
+                { heading: pages.services.service1.heading, subtitle: pages.services.service1.subtitle },
+                { heading: pages.services.service2.heading, subtitle: pages.services.service2.subtitle },
+                { heading: pages.services.service3.heading, subtitle: pages.services.service3.subtitle },
+                { heading: pages.services.service4.heading }
+            ]}
         />
 
         </main>

@@ -7,6 +7,7 @@ import Cta from "../components/sections/cta"
 import Column1 from "../components/sections/column1"
 import Bullet from "../components/sections/bullet"
 import Column3 from "../components/sections/column3"
+import Button from "../components/Button"
 
 
 const Resources = () => {
@@ -51,6 +52,7 @@ const Resources = () => {
         </div>
         <Cta
             title={pages.home.cta.quote}
+            
         />
 
         </main>
