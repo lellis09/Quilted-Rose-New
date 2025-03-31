@@ -19,8 +19,8 @@ const Contact = ({title}) => {
                 
                 />
             </div>
-            <section className=" flex flex-col bg-olive items-center px-10 gap-y-8 w-full h-[500px] md:w-[60%] justify-center">
-                <h2 className="text-creamy text-4xl">{title}</h2>
+            <section className=" flex flex-col bg-olive items-center px-10 gap-y-6 w-full h-[500px] md:w-[60%] justify-center">
+                <h2 className="text-creamy text-4xl pt-6">{title}</h2>
                 <form>
                     
                 </form>

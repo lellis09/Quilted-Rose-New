@@ -29,7 +29,15 @@ body {
 .vision{
   padding: 12px, 40px ;
   background-color:var(--color-sage);
-  height:25rem ;
+  height:fit-content ;
+  border-top: 1.5px var(--color-olive) solid;
+  border-bottom: 1.5px var(--color-olive) solid;
+  color: var(--color-creamy);
+}
+.vision1{
+  padding: 12px, 40px ;
+  background-color:var(--color-sage);
+  height:25rem;
   border-top: 1.5px var(--color-olive) solid;
   border-bottom: 1.5px var(--color-olive) solid;
   color: var(--color-creamy);
@@ -37,7 +45,7 @@ body {
 @media (max-width:640px){
   .vision-txt{
     position: relative;
-    border: 1px solid darkblue;
+    /* border: 1px solid darkblue; */
     bottom: 20px;
   }
   .quote{
@@ -46,7 +54,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .vision{
+  .vision,
+  .vision1{
     /* border: 5px solid red; */
     height:35rem;
   }
@@ -59,8 +68,9 @@ body {
 }
 /* section size for galaxy 24 ultra */
 @media (max-width: 450px) {
-  .vision{
-    border: 5px solid aqua;
+  .vision,
+  .vision1{
+    /* border: 5px solid aqua; */
     height:40rem;
     padding-bottom: 20px;
   }
@@ -74,8 +84,9 @@ body {
   @layer utilities {
     /* Apply styles only between 640px and 1023px */
     @media (min-width: 640px) and (max-width: 1023px) {
-      .vision {
-       border: 3px dotted darkcyan;
+      .vision,
+      .vision1 {
+       /* border: 3px dotted darkcyan; */
         height: 45rem; /* Adjust as needed */
         
       }
@@ -83,7 +94,8 @@ body {
   }
 
 @media (min-width:1024px){
-  .vision{
+  .vision,
+  .vision1{
     /* border: 1px solid aqua; */
     padding-left: 0;
   }
@@ -95,7 +107,8 @@ body {
   
 }
 @media (min-width:1280px){
-  .vision{
+  .vision,
+  .vision1{
     /* border: 1px solid salmon; */
     padding-left: 40px;
   }
@@ -105,6 +118,9 @@ body {
 .vision .quote{
   color:var(--color-darkGreen);
 }
+.vision1 .quote{
+  color:var(--color-darkGreen);
+}
 .quote,
 .quote-cta{
   text-transform: none;
@@ -112,6 +128,9 @@ body {
 
 }
 .vision .header{
+  color:var(--color-creamy)
+}
+.vision1 .header{
   color:var(--color-creamy)
 }
 
@@ -180,7 +199,8 @@ html {
 /* resources page */
 
 .reads{
-  border: solid 1px var(--color-blush);
+  /* border: solid 1px var(--color-blush); */
+  padding-bottom: 1rem;
 }
 
 .reads-title{
@@ -194,3 +214,6 @@ html {
 .cont-section{
   
 }
+
+/* privacy page */
+/* .privacy */

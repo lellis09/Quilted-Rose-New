@@ -71,7 +71,6 @@ const About = () => {
         <Contact 
           title={pages.home.contact.title}
         />
-        <Footer />
       </main>
     )
 }

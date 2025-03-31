@@ -35,7 +35,7 @@ function Home() {
       </div>
       
       <Column2 
-        className="vision "
+        className="vision1 "
         title={pages.home.vision.title}
         text1={pages.home.vision.text1}
         quote={pages.home.vision.quote}
@@ -74,7 +74,6 @@ function Home() {
       <Contact 
         title={pages.home.contact.title}
       />
-      <Footer />
     </main>
   )
 }

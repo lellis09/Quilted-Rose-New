@@ -37,6 +37,8 @@ const Services = () => {
                  point4:pages.services.bullet.point4,  
                  point5:pages.services.bullet.point5,  
                  point6:pages.services.bullet.point6,  
+                 point7:pages.services.bullet.point7,  
+                 point8:pages.services.bullet.point8,  
                 
               }}
           />

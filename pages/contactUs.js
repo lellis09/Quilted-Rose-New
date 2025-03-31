@@ -16,7 +16,7 @@ const ContactUs =() => {
       />
 
     <Bullet
-        className="reads"
+        className="reads relative lg:left-40"
         points={{
             point1: pages.contact.section.point1,
             point2: pages.contact.section.point2,
@@ -24,7 +24,9 @@ const ContactUs =() => {
             
         }}
     />
-    <Contact/>
+    <Contact
+        title={pages.home.contact.title}
+    />
         </main>
     )
 }

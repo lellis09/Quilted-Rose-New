@@ -9,7 +9,7 @@ const Points = ({point1, point2, point3}) => {
                     <div className="flex gap-x-4">
                         <FaInbox />
                         <ul>
-                            <li className="text-xl">{point1}</li>
+                            <li className="text-[18px]">{point1}</li>
                         </ul>
                     </div>
                 )}
@@ -17,7 +17,7 @@ const Points = ({point1, point2, point3}) => {
                     <div className="flex gap-x-4">
                         <FaInbox />
                         <ul>
-                            <li className="text-xl">{point2}</li>
+                            <li className="text-[18px]">{point2}</li>
                         </ul>
                     </div>
                 )}
@@ -25,7 +25,7 @@ const Points = ({point1, point2, point3}) => {
                     <div className="flex gap-x-4">
                         <FaInbox />
                         <ul>
-                            <li className="text-xl">{point3}</li>
+                            <li className="text-[18px]">{point3}</li>
                         </ul>
                     </div>
                 )}
