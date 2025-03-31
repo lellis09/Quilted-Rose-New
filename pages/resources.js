@@ -13,11 +13,6 @@ import Button from "../components/Button"
 const Resources = () => {
     return(
         <main className="flex flex-col">
-      <Banner
-            email={pages.banner.email.email} 
-            phone={pages.banner.phone.phone}
-      />
-      <LogoContainer />
       <Hero 
             title={pages.resources.hero.title} 
             imageSrc={"floral-el.svg"}

@@ -13,11 +13,7 @@ import Points from "../components/sections/points";
 const Services = () => {
     return(
         <main className="flex flex-col">
-       <Banner
-            email={pages.banner.email.email} 
-            phone={pages.banner.phone.phone}
-      />
-      <LogoContainer />
+
       <Hero 
             title={pages.services.hero.title} 
             imageSrc={"floral-el.svg"}

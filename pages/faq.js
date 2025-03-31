@@ -11,11 +11,6 @@ import Button from "../components/Button"
 const Faq = () => {
     return(
         <main className="flex flex-col">
-       <Banner
-            email={pages.banner.email.email} 
-            phone={pages.banner.phone.phone}
-      />
-      <LogoContainer />
       <Hero 
             title={pages.faq.hero.title} 
             imageSrc={"floral-el.svg"}

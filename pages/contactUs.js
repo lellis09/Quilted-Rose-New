@@ -10,11 +10,6 @@ import Contact from "../components/sections/contact"
 const ContactUs =() => {
     return(
         <main className="flex flex-col">
-      <Banner
-        email={pages.banner.email.email}
-        phone={pages.banner.phone.phone}
-      />
-      <LogoContainer />
       <Hero 
         title={pages.contact.hero.title} 
         imageSrc={"floral-el.svg"}

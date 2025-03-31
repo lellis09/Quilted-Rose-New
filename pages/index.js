@@ -15,11 +15,7 @@ function Home() {
  
   return (
     <main className="flex flex-col"> 
-      <Banner
-        email={pages.banner.email.email}
-        phone={pages.banner.phone.phone}
-      />
-      <LogoContainer />
+      
       <Hero 
         title={pages.home.hero.title} 
         imageSrc={"floral-el.svg"}
