@@ -2,6 +2,7 @@ import '../global.css'
 import LogoContainer from '../components/sections/logo-cont'
 import Banner from '../components/sections/banner'
 import {pages} from "../content/content"
+import Footer from '../components/layout/footer'
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -17,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
     <main className='w-full'>
       <Component {...pageProps} />
     </main>
-    
+    <Footer />
   </>
 
   ) 

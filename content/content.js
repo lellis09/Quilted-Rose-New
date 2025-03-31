@@ -75,7 +75,7 @@ export const pages = {
         service4:{heading:'', subtitle:''},
     },
     privacy:{
-        hero:{title:'' },
+        hero:{title:'Privacy Policy' },
         section1:{title:'', text:''},
         policy:{title:'', text:''},
         policy1:{title:'', text:''},
