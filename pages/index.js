@@ -62,7 +62,17 @@ function Home() {
       <div className="flex justify-center pb-8  ">
         <Button className="bg-blush w-48 relative ">Learn More</Button>
       </div>
-      
+      <div className=" flex flex-col justify-center items-center bg-sage w-full md:pt-20 px-6">
+        <Column1 
+          className="border-2 border-creamy text-creamy w-full xl:w-[75%] xl:h-[75%] rounded-md bg-creamy/10 "
+          title={pages.offer.section1.title}
+          text1={pages.offer.section1.text1}
+          text2={pages.offer.section1.text2}
+        />
+      <div className="flex justify-center pb-8 md:relative lg:bottom-5 md:bottom-3 ">
+        <Button className="bg-blush w-48 relative ">Learn More</Button>
+      </div>
+      </div>
       <Cta
         title={pages.home.cta.quote}
       />

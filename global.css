@@ -85,7 +85,8 @@ body {
     /* Apply styles only between 640px and 1023px */
     @media (min-width: 640px) and (max-width: 1023px) {
       .vision,
-      .vision1 {
+      .vision1,
+      .product {
        /* border: 3px dotted darkcyan; */
         height: 45rem; /* Adjust as needed */
         
@@ -131,6 +132,9 @@ body {
   color:var(--color-creamy)
 }
 .vision1 .header{
+  color:var(--color-creamy)
+}
+.product .header{
   color:var(--color-creamy)
 }
 
@@ -217,3 +221,17 @@ html {
 
 /* privacy page */
 /* .privacy */
+
+/* offer-digital product */
+.product{
+    padding: 12px, 12px ;
+    background-color:var(--color-sage);
+    height:30rem;
+    border-top: 1.5px var(--color-olive) solid;
+    border-bottom: 1.5px var(--color-olive) solid;
+    color: var(--color-creamy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

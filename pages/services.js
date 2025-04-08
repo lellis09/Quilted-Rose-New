@@ -28,6 +28,7 @@ const Services = () => {
       </div>
       <div className="vision">
         <Bullet
+             className="xl:px-64 lg:px-24"
               text1={pages.services.bullet.text1}
               text2={pages.services.bullet.text2}
               points={{

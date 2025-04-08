@@ -14,7 +14,7 @@ const ColumnAlt = ({ className="", title, text1, imageSrc,  faqs = [] }) => {
                              
             </div>
             <div className="pt-6 md:pt-0 md:w-[65%] w-full flex flex-col items-start justify-start h-full md:pl-6 lg:pl-10 lg:pr-10 px-10 ">
-                <section className="w-full">
+                <section className="w-full flex items-center pt-4">
                     <h1 className="text-4xl text-darkGreen py-2 pl-4">{title}</h1>
                     <p className="lg:pr-10 text-left text-xl pt-4 pl-4">{text1}</p>
 

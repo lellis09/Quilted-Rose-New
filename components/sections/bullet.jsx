@@ -9,7 +9,7 @@ const Bullet = ({text1, text2, points =[], className = ""}) => {
         <main className={`${className}`}>
             <p className="text-creamy text-center text-xl py-8 mt-6">{text1}</p>
             <div className="flex flex-col lg:flex-row gap-x-32 justify-center items-center w-full">
-                <div className="flex ">
+                <div className="flex flex-col w-1/3 ">
                         <Points 
                             point1={points.point1} 
                             point2={points.point2} 
@@ -18,17 +18,18 @@ const Bullet = ({text1, text2, points =[], className = ""}) => {
                     </div>
 
                     {/* Column 2: Points 4-6 */}
-                    <div className="flex">
+                    <div className="flex flex-col w-1/3">
                         <Points 
                             point1={points.point4} 
                             point2={points.point5} 
                             point3={points.point6} 
                         />
                     </div>
-                    <div className="flex">
+                    <div className="flex flex-col w-1/3">
                         <Points 
                             point1={points.point7} 
                             point2={points.point8} 
+                            point3={points.point9} 
                         />
                     </div>
             </div>
