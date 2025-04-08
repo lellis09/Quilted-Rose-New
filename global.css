@@ -205,6 +205,10 @@ html {
 .reads{
   /* border: solid 1px var(--color-blush); */
   padding-bottom: 1rem;
+  align-items: center;
+}
+.reads-el{
+  width:70%; 
 }
 
 .reads-title{

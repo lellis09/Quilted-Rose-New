@@ -25,7 +25,9 @@ const Resources = () => {
       />
         <Bullet
             className="reads"
-            points={{
+            pointsClassName= "reads-el"
+            points={         
+                {
                 point1: pages.resources.books.point1,
                 point2: pages.resources.books.point2,
                 point3: pages.resources.books.point3,

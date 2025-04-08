@@ -1,9 +1,9 @@
 import React from "react";
 import { FaInbox } from "react-icons/fa";
 
-const Points = ({point1, point2, point3}) => {
+const Points = ({point1, point2, point3, className = ''}) => {
     return(
-        <main className="">
+        <main className={className}>
             <section className="flex flex-col gap-y-4 ">
             {point1 && (
                     <div className="flex gap-x-4 w-full">

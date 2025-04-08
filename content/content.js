@@ -42,7 +42,7 @@ export const pages = {
               text3:'', },
         reads:{title:'Recommended Reads' },
         partners:{title:'Community Partners' },
-        books:{point1:'Ain"t I A Woman-Sojourner Truth', 
+        books:{point1:'Ain\'\t I A Woman-Sojourner Truth', 
             point2:'All About Love-Bell Hooks', 
             point3:'Post Traumatic Slave Syndrome -Dr.Joy Degruy', 
             point4:'Women Race and Class-Angela Davis', 
