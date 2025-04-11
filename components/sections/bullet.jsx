@@ -4,41 +4,41 @@ import Points from "./points";
 import { pages } from "../../content/content";
 
 
-const Bullet = ({text1, text2, points =[], className = "", pointsClassName = ""}) => {
-    return(
-        <main className={`${className}`}>
-            <p className="text-creamy text-center text-xl py-8 mt-6">{text1}</p>
-            <div className="flex flex-col lg:flex-row gap-x-32 justify-center items-center w-full">
-                <div className="flex flex-col  ">
-                        <Points 
-                            point1={points.point1} 
-                            point2={points.point2} 
-                            point3={points.point3}
-                            className={pointsClassName} 
-                        />
-                    </div>
-
-                    {/* Column 2: Points 4-6 */}
-                    <div className="flex flex-col ">
-                        <Points 
-                            point1={points.point4} 
-                            point2={points.point5} 
-                            point3={points.point6} 
-                            className={pointsClassName}
-                        />
-                    </div>
-                    <div className="flex flex-col ">
-                        <Points 
-                            point1={points.point7} 
-                            point2={points.point8} 
-                            point3={points.point9} 
-                            className={pointsClassName}
-                        />
-                    </div>
+const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "" }) => {
+    const {
+      point1, point2, point3, point4,
+      point5, point6, point7, point8, point9
+    } = points;
+  
+    // Create an array of valid point groups (max 3 points per column)
+    const pointGroups = [
+      [point1, point2, point3, point4].filter(Boolean),
+      [point5, point6, point7, point8].filter(Boolean),
+      [point9].filter(Boolean)
+    ].filter(group => group.length > 0); // Remove empty groups
+  
+    return (
+      <main className={`${className}`}>
+        <p className="text-creamy text-center text-xl py-8 mt-6">{text1}</p>
+  
+        <div className="flex flex-col lg:flex-row gap-x-24 justify-center items-start w-full px-6">
+          {pointGroups.map((group, index) => (
+            <div key={index} className="flex flex-col w-full">
+              <Points
+                point1={group[0]}
+                point2={group[1]}
+                point3={group[2]}
+                point4={group[3]}
+                className={pointsClassName}
+              />
             </div>
-            <p className="text-creamy text-center text-xl py-8">{text2}</p>
-        </main>
-    )
-}
+          ))}
+        </div>
+  
+        <p className="text-creamy text-center text-xl py-8">{text2}</p>
+      </main>
+    );
+  };
+  
 
 export default Bullet

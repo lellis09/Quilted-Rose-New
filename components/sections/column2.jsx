@@ -32,9 +32,10 @@ const Column2 = ({
                 
                 
             </div>
-            <DecorativeL decClassName={decClassName} />
+            
             <div className={`pt-0 lg:pt-2 w-full h-full lg:w-[60%] flex flex-col items-center justify-start md:pl-20 pb-6 `}>
                 <h1 className="header text-4xl text-darkGreen py-2 ">{title}</h1>
+                {/* <DecorativeL decClassName={decClassName} /> */}
                 <section className={`w-full ${textClassName} `}>
                     
                     <p className="text-xl pt-4 w-[95%]">{text1}</p>

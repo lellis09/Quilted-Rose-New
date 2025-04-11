@@ -5,6 +5,7 @@ import LogoContainer from "../components/sections/logo-cont"
 import { pages } from "/content/content.js"
 import Cta from "../components/sections/cta"
 import Column1 from "../components/sections/column1"
+import Column2 from "../components/sections/column2"
 import Button from "../components/Button"
 import Bullet from "../components/sections/bullet"
 import ColumnAlt from "../components/sections/columnAlt"
@@ -26,6 +27,27 @@ const Services = () => {
       <div className="flex justify-center pb-8  ">
         <Button className="bg-blush w-48 relative ">Book Now</Button>
       </div>
+
+      <div className="">
+            <Cta
+                title={pages.home.cta.quote}
+            />
+      </div>
+      <div className="flex flex-col items-center ">
+        <Column2 
+          title={pages.offer.section2.title}
+          text1={pages.offer.section2.text1}
+          text2={pages.offer.section2.text2}
+          text3={pages.offer.section2.text3}
+          imageSrc={"/lisa-walker-1.png"}
+          imageClassName="h-[600px]"
+          textClassName="lg:pt-4"
+          decClassName="h-[2rem]"
+        />
+      </div>
+      <div className="flex justify-center items-center pb-8  ">
+            <Button className="bg-blush w-48 relative lg:bottom-60 lg:left-20 xl:left-12">Learn More</Button>
+      </div>
       <div className="vision">
         <Bullet
              className="xl:px-64 lg:px-24"
@@ -45,11 +67,7 @@ const Services = () => {
           />
       </div>
         
-        <div className="">
-            <Cta
-                title={pages.home.cta.quote}
-            />
-        </div>
+
         <ColumnAlt 
             title={pages.services.other.title}
             text1={pages.services.other.text1}

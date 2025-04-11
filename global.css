@@ -72,7 +72,8 @@ body {
   .vision1{
     /* border: 5px solid aqua; */
     height:40rem;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    padding-top: 0;
   }
   .quote,
   .quote-cta{
@@ -206,9 +207,11 @@ html {
   /* border: solid 1px var(--color-blush); */
   padding-bottom: 1rem;
   align-items: center;
+  
 }
 .reads-el{
-  width:70%; 
+  width:100%; 
+  flex-wrap: wrap;
 }
 
 .reads-title{

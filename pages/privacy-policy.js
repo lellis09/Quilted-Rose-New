@@ -35,6 +35,7 @@ const Privacy = () =>{
             >
                 <Bullet
                     className="pt-0"
+                    pointsClassName="border-2 w-full"
                     points={{
                         point1:pages.privacy.policy3.point1, 
                         point2:pages.privacy.policy3.point2,
