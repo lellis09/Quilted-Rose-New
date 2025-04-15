@@ -3,6 +3,7 @@ import LogoContainer from '../components/sections/logo-cont'
 import Banner from '../components/sections/banner'
 import {pages} from "../content/content"
 import Footer from '../components/layout/footer'
+import CopyRight from '../components/sections/copyright'
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -18,7 +19,14 @@ export default function MyApp({ Component, pageProps }) {
     <main className='w-full'>
       <Component {...pageProps} />
     </main>
-    <Footer />
+    {/* Only show footer on lg screens and up */}
+    <div className="hidden lg:block">
+        <Footer />
+      </div>
+      <CopyRight 
+        title={pages.copyright.copyR.title}
+        text1={pages.copyright.copyR.text1}
+      />
   </>
 
   ) 

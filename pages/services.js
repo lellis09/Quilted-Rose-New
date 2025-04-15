@@ -43,11 +43,15 @@ const Services = () => {
           imageClassName="h-[600px]"
           textClassName="lg:pt-4"
           decClassName="h-[2rem]"
-        />
-      </div>
+          >
       <div className="flex justify-center items-center pb-8  ">
-            <Button className="bg-blush w-48 relative lg:bottom-60 lg:left-20 xl:left-12">Learn More</Button>
+            <Button className="bg-blush w-48 ">Learn More</Button>
+       </div>
+        </Column2>
       </div>
+      {/* <div className="flex justify-center items-center pb-8  ">
+            <Button className="bg-blush w-48 relative lg:bottom-60 lg:left-20 xl:left-12">Learn More</Button>
+      </div> */}
       <div className="vision">
         <Bullet
              className="xl:px-64 lg:px-24"

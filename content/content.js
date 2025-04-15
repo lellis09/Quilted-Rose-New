@@ -161,4 +161,7 @@ export const pages = {
         phone:{title:''},
         email:{title:''},
     },
+    copyright:{
+        copyR:{title:'2025', text1:'Quilted Rose Clinical Services-All Rights Reserved'}
+    }
 }   
