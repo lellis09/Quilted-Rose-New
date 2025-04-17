@@ -5,10 +5,10 @@ import FooterNav from "../layout/nav-footer";
 const Footer = () => {
     return(
         <section className="logo-container w-full h-full sm:h-auto  bg-creamy flex flex-col justify-center items-center pt-10 md:pt-0">
-        <div className=" w-96 h-64 sm:h-64 lg:flex flex-col justify-center relative hidden ">
+        <div className=" w-96 h-64 sm:h-64 lg:flex flex-col justify-center relative hidden z-10 ">
             <Image src={"/qr-logo.svg"} layout="fill" objectFit="contain" className="lg:bottom-0 w-full h-full"/>
         </div>
-        <div className="relative ">
+        <div className="relative bottom-10">
             <FooterNav />
         </div>
 

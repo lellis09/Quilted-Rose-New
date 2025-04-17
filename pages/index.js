@@ -25,6 +25,7 @@ function Home() {
         imageSrc={"floral-el.svg"}
         />
       <div className="flex flex-col items-center ">
+
       <Column2 
         title={pages.home.about.title}
         text1={pages.home.about.text1}
@@ -35,7 +36,7 @@ function Home() {
         textClassName="lg:pt-4 text-darkGreen"
         decClassName="h-[20rem] relative top-2 rotate-x-30"
         >
-        <Button className="bg-darkGreen w-48">About Dr. Walker</Button>
+        <Button className="bg-darkGreen w-72">More About Dr. Walker</Button>
       </Column2>
         {/* <Button className="bg-darkGreen w-48 relative lg:bottom-0 2xl:bottom-15 lg:left-14 xl:left-13 2xl:left-8 mb-4 lg:mb-0">About Dr. Walker</Button> */}
       </div>

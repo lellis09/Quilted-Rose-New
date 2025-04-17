@@ -7,7 +7,7 @@ const FooterNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full relative">
+    <nav className="w-full relative z-20">
              {/* Navigation Links */}
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:gap-x-12 gap-y-6 lg:gap-y-0">
           <Link href="/" className="text-md text-darkGreen hover:underline" onClick={() => setIsOpen(false)}>Home</Link>

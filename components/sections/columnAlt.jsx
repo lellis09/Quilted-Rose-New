@@ -15,12 +15,12 @@ const ColumnAlt = ({ className="", title, text1, imageSrc,  faqs = [] }) => {
             </div>
             <div className="pt-6 md:pt-0 md:w-[65%] w-full flex flex-col items-start justify-start h-full md:pl-6 lg:pl-10 lg:pr-10 px-10 ">
                 <section className="w-full flex items-center pt-4">
-                    <h1 className="text-4xl text-darkGreen py-2 pl-4">{title}</h1>
-                    <p className="lg:pr-10 text-left text-xl pt-4 pl-4">{text1}</p>
+                    <h1 className="text-5xl text-darkGreen py-2 pl-4">{title}</h1>
+                    <p className="lg:pr-10 text-left text-lg pt-4 pl-4">{text1}</p>
 
                 </section>
                 {/* FAQ Accordions */}
-                <div className="flex flex-col justify-center gap-y-4 items-start w-full pt-8">
+                <div className="flex flex-col justify-center gap-y-4 items-start w-full pt-8 ">
                     {faqs.map((faq, index) => (
                         <Accordian key={index} className="ser-Border" heading={faq.heading} subtitle={faq.subtitle} />
                     ))}

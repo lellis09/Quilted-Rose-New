@@ -4,7 +4,7 @@ import Points from "./points";
 import { pages } from "../../content/content";
 
 
-const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "" }) => {
+const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "", textClassName ="" }) => {
     const {
       point1, point2, point3, point4,
       point5, point6, point7, point8, point9
@@ -35,7 +35,7 @@ const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "
           ))}
         </div>
   
-        <p className="text-creamy text-center text-xl py-8">{text2}</p>
+        <p className={` ${textClassName}text-creamy text-center text-xl py-8`}>{text2}</p>
       </main>
     );
   };

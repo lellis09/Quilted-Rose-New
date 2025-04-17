@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Love+Light&family=Oswald&display=swap');
 @import "tailwindcss";
+
 
 @theme {
   --color-creamy: #FFFAF5;
@@ -8,9 +10,12 @@
   --color-olive: #5E5B38;
   --color-darkGreen: #0A2522;
 }
+
+html, body {
+  overflow-x: hidden;
+}
 body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: "Fauna One", serif;
   margin: 0 auto;
   font-size: 16px;
   background:var(--color-creamy);
@@ -30,16 +35,16 @@ body {
   padding: 12px, 40px ;
   background-color:var(--color-sage);
   height:fit-content ;
-  border-top: 1.5px var(--color-olive) solid;
-  border-bottom: 1.5px var(--color-olive) solid;
+  border-top: 2px var(--color-olive) solid;
+  border-bottom: 2px var(--color-olive) solid;
   color: var(--color-creamy);
 }
 .vision1{
   padding: 12px, 40px ;
   background-color:var(--color-sage);
   height:25rem;
-  border-top: 1.5px var(--color-olive) solid;
-  border-bottom: 1.5px var(--color-olive) solid;
+  border-top: 2px var(--color-olive) solid;
+  border-bottom: 2px var(--color-olive) solid;
   color: var(--color-creamy);
 }
 @media (max-width:640px){
@@ -61,7 +66,7 @@ body {
   }
   .quote,
   .quote-cta{
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     
   }
 
@@ -77,7 +82,7 @@ body {
   }
   .quote,
   .quote-cta{
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
   }
 
 }
@@ -126,6 +131,7 @@ body {
 .quote,
 .quote-cta{
   text-transform: none;
+
   
 
 }
@@ -143,6 +149,11 @@ body {
 /* text-headers */
 h1, h2 , h3{
   text-transform: uppercase ;
+  font-family: "Oswald", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: 24px; */
 }
 html {
   overflow-y: scroll;
@@ -205,13 +216,17 @@ html {
 
 .reads{
   /* border: solid 1px var(--color-blush); */
-  padding-bottom: 1rem;
+  /* padding-bottom: .25rem; */
   align-items: center;
   
 }
 .reads-el{
   width:100%; 
   flex-wrap: wrap;
+  padding: 0 2rem 0 2rem;
+  /* border: 2px solid fuchsia; */
+  /* position: relative;
+  bottom: 5rem; */
 }
 
 .reads-title{
@@ -241,4 +256,12 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+span{
+
+    font-family: "Love Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:var(--color-blush)
 }

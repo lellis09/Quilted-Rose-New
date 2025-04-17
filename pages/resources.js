@@ -24,8 +24,9 @@ const Resources = () => {
             text2={pages.resources.hero.text2}
       />
         <Bullet
-            className="reads"
+            className="reads lg:relative lg:bottom-[7rem]"
             pointsClassName= "reads-el"
+            textClassName="hidden"
             points={         
                 {
                 point1: pages.resources.books.point1,
@@ -38,12 +39,12 @@ const Resources = () => {
             }}
         />
         <Column1 
-            className="partner-title"
+            className="partner-title border-t-[2px] border-olive"
             title={pages.resources.partners.title}
             text1={pages.resources.hero.text1}
             text2={pages.resources.hero.text2}
         />
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 ">
             <Column3 
                 images={["/sample-logo.svg", "/sample-logo.svg", "/sample-logo.svg"]} />
             <Column3 images={["/sample-logo.svg", "/sample-logo.svg", "/sample-logo.svg"]} />

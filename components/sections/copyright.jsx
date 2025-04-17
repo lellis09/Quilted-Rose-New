@@ -8,11 +8,11 @@ const CopyRight = ({title, text1}) => {
         <section className="banner w-full bg-sage h-10 flex gap-x-4 justify-center px-6 items-center">
             <div className="text-creamy flex gap-x-2">
                 {/* <FaEnvelope /> */}
-                <h2 className="text-creamy text-sm">{title}</h2>
+                <p className="text-creamy text-[11px] md:text-sm">{title}</p>
             </div>
             <div className="text-creamy flex gap-x-2">
                 {/* <FaPhoneAlt /> */}
-                <h2 className="text-creamy text-sm">{text1}</h2>
+                <p className="text-creamy text-[11px] md:text-sm">{text1}</p>
             </div>
         </section>
     )

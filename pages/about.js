@@ -26,12 +26,15 @@ const About = () => {
             text1={pages.about.about.text1}
             text2={pages.about.about.text2}
             text3={pages.about.about.text3}
-            imageSrc={"/lisa-walker-1.png"}
+            imageSrc={"/walker-test.webp"}
             imageClassName="h-[600px]"
             textClassName="lg:pt-4"
             decClassName="h-[2rem]"
-          />
-          <Button className="bg-darkGreen w-48 relative xl:bottom-15 lg:left-4">About Dr. Walker</Button>
+            >
+              <Button className="bg-darkGreen w-48 ">About Dr. Walker</Button>
+            </Column2>
+
+          
         </div>
         
         <Column1 
@@ -65,7 +68,7 @@ const About = () => {
         </div>
         
         <Cta
-          title={pages.home.cta.quote}
+          title={pages.about.cta.quote}
         />
 
         <Contact 

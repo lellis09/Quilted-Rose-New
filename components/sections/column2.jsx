@@ -25,17 +25,17 @@ const Column2 = ({
                     </div>
                 ) : (
                     <div className="sm:pt-6 lg:pt-12 w-full lg:h-28 flex items-center justify-center relative lg:top-40">
-                        <blockquote className="quote text-2xl md:text-3xl italic lg:text-right ">{quote}</blockquote>
+                        <blockquote className="quote text-2xl md:text-5xl italic lg:text-right ">{quote}</blockquote>
                     </div>
                 )}
             </div>
 
             <div className={`pt-0 lg:pt-2 w-full h-full lg:w-[60%] flex flex-col items-center justify-start md:pl-20 pb-6`}>
-                <h1 className="header text-4xl text-darkGreen py-2">{title}</h1>
+                <h1 className="header text-5xl text-darkGreen py-2">{title}</h1>
                 <section className={`w-full ${textClassName}`}>
-                    <p className="text-xl pt-4 w-[95%]">{text1}</p>
-                    <p className="text-xl pt-4">{text2}</p>
-                    <p className="text-xl pt-4 text-blush">{text3}</p>
+                    <p className="text-lg pt-4 w-[95%]">{text1}</p>
+                    <p className="text-lg pt-4">{text2}</p>
+                    <p className="text-lg pt-4 text-blush">{text3}</p>
                 </section>
                 {children && (
                     <div className="pt-6">

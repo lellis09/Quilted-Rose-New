@@ -72,7 +72,8 @@ const Services = () => {
       </div>
         
 
-        <ColumnAlt 
+        <ColumnAlt
+            className="border-b-2 border-olive" 
             title={pages.services.other.title}
             text1={pages.services.other.text1}
             text2={pages.home.about.text2}
