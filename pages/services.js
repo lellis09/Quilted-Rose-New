@@ -56,7 +56,7 @@ const Services = () => {
         <Bullet
              className="xl:px-64 lg:px-24"
               text1={pages.services.bullet.text1}
-              text2={pages.services.bullet.text2}
+              // text2={pages.services.bullet.text2}
               points={{
                  point1:pages.services.bullet.point1, 
                  point2:pages.services.bullet.point2,
@@ -75,7 +75,7 @@ const Services = () => {
         <ColumnAlt
             className="border-b-2 border-olive" 
             title={pages.services.other.title}
-            text1={pages.services.other.text1}
+            text1={pages.services.bullet.text2}
             text2={pages.home.about.text2}
             text3={pages.home.about.text3}
             imageSrc={"/floral-service.webp"}

@@ -22,7 +22,7 @@ const Faq = () => {
             text2={pages.resources.hero.text2}
       />
       <ColumnAlt 
-            className="border-t-[2px] border-b-[2px] border-olive"
+            className="border-t-[2px] border-b-[2px] border-olive "
             title={pages.resources.hero.text1}
             text1={pages.faq.header.text1}
             text2={pages.home.about.text2}
