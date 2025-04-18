@@ -62,7 +62,7 @@ body {
   .vision,
   .vision1{
     /* border: 5px solid red; */
-    height:35rem;
+    height:fit-content;
   }
   .quote,
   .quote-cta{
