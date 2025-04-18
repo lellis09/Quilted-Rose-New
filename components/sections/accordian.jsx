@@ -20,7 +20,7 @@ const Accordian = ({ heading, subtitle, className = "", showIcon = true }) => {
       </div>
 
       {isOpen && (
-        <p className="text-darkGreen pt-2 pr-4 text-left">{subtitle}</p>
+        <p className="text-darkGreen pt-2 pr-4 text-left text-sm ">{subtitle}</p>
       )}
     </section>
   );

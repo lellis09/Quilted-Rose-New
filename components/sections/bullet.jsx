@@ -19,7 +19,7 @@ const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "
   
     return (
       <main className={`${className}`}>
-        <p className="text-creamy text-center text-xl py-8 mt-6">{text1}</p>
+        <p className="text-creamy text-center text-lg py-8 mt-6">{text1}</p>
   
         <div className="flex flex-col lg:flex-row gap-x-24 justify-center items-start w-full px-6">
           {pointGroups.map((group, index) => (
@@ -35,7 +35,7 @@ const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "
           ))}
         </div>
   
-        <p className={` ${textClassName}text-creamy text-center text-xl py-8`}>{text2}</p>
+        <p className={` ${textClassName}text-creamy text-center text-lg py-8`}>{text2}</p>
       </main>
     );
   };

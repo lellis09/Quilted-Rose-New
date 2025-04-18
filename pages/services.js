@@ -78,7 +78,7 @@ const Services = () => {
             text1={pages.services.other.text1}
             text2={pages.home.about.text2}
             text3={pages.home.about.text3}
-            imageSrc={"/lisa-walker-1.png"}
+            imageSrc={"/floral-service.webp"}
             faqs={[
                 { heading: pages.services.service1.heading, subtitle: pages.services.service1.subtitle },
                 { heading: pages.services.service2.heading, subtitle: pages.services.service2.subtitle },
