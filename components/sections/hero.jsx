@@ -6,7 +6,7 @@ const Hero = ({ title, imageSrc}) => {
     return(
         <section className="hero w-full h-72 md:h-[25rem] bg-darkGreen flex justify-center items-center relative overflow-hidden ">
                <Image 
-                src={'/florals-new-optimized.webp'}
+                src={'/florals-new_optimized.webp'}
                 // width={500}
                 // height={500}
                 layout="fill"
