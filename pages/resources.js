@@ -17,14 +17,15 @@ const Resources = () => {
             title={pages.resources.hero.title} 
             imageSrc={"floral-el.svg"}
         />
-        <Column1 
+        {/* <Column1 
             className="reads-title"
             title={pages.resources.reads.title}
             text1={pages.resources.hero.text1}
             text2={pages.resources.hero.text2}
-      />
+      /> */}
+      <h2 className="text-5xl text-center py-2 text-darkGreen">Recommended Reads</h2>
         <Bullet
-            className="reads lg:relative lg:bottom-[7rem]"
+            className="reads lg:relative lg:bottom-[4rem]"
             pointsClassName= "reads-el"
             textClassName="hidden"
             points={         
@@ -38,21 +39,30 @@ const Resources = () => {
                 point7: pages.resources.books.point7
             }}
         />
-        <Column1 
+         <h2 className="text-5xl text-center py-4 text-darkGreen border-t-[2px] border-olive">Community Partners</h2>
+        {/* <Column1 
             className="partner-title border-t-[2px] border-olive"
             title={pages.resources.partners.title}
             text1={pages.resources.hero.text1}
             text2={pages.resources.hero.text2}
-        />
-        <div className="flex flex-wrap justify-center gap-4 ">
+        /> */}
+        <div className="flex flex-wrap justify-center gap-2 py-2">
             <Column3 
-                images={["/sample-logo.svg", "/sample-logo.svg", "/sample-logo.svg"]} />
-            <Column3 images={["/sample-logo.svg", "/sample-logo.svg", "/sample-logo.svg"]} />
+                images={["/12.svg", "/13.svg", "/14.svg", "/15.svg",]} />
+            <Column3 images={["/16.svg", "/17.svg", "/18.svg"]} />
+            {/* <Column3 images={["/18.svg"]} /> */}
         </div>
-        <Cta
-            title={pages.home.cta.quote}
-            
+        <div className=" flex flex-col justify-center items-center border-olive border-t-[2px] border-b-[2px] bg-sage w-full pt-8 md:pt-20 px-6">
+        <Column1 
+          className="border-2 border-creamy text-creamy w-full xl:w-[75%] xl:h-[75%] rounded-md bg-creamy/10 "
+          title={pages.offer.section1.title}
+          text1={pages.offer.section1.text1}
+          text2={pages.offer.section1.text2}
         />
+      <div className="flex justify-center pb-8 relative lg:bottom-5 md:bottom-3 -bottom-4">
+        <Button className="bg-blush w-48 relative ">Learn More</Button>
+      </div>
+      </div>
 
         </main>
     )

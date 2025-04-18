@@ -76,7 +76,7 @@ body {
   .vision,
   .vision1{
     /* border: 5px solid aqua; */
-    height:40rem;
+    height:fit-content;
     padding-bottom: 30px;
     padding-top: 0;
   }

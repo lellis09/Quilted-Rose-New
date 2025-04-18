@@ -6,7 +6,7 @@ const Column3 = ({ images = [], title }) => {
     return(
         <main className="">
             <h2>{title}</h2>
-            <div className="grid grid-cols-3 gap-4 w-full">
+            <div className="grid grid-cols-4 gap-6 w-full">
                 {images.map((src, index) => (
                     <div key={index} className="relative w-32 h-32 md:w-40 md:h-40">
                         <Image src={src} alt={`Image ${index + 1}`} layout="intrinsic" width={150} height={150} objectFit="cover" className="rounded-lg" />
