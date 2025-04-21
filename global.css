@@ -218,6 +218,9 @@ html {
   /* border: solid 1px var(--color-blush); */
   /* padding-bottom: .25rem; */
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
 }
 .reads-el{

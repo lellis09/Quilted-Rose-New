@@ -9,14 +9,14 @@ import Contact from "../components/sections/contact"
 
 const ContactUs =() => {
     return(
-        <main className="flex flex-col">
+        <main className="flex flex-col items-center">
       <Hero 
         title={pages.contact.hero.title} 
         imageSrc={"floral-el.svg"}
       />
 
     <Bullet
-        className="reads relative lg:left-40"
+        className=" w-full lg:w-1/2  lg:px-24"
         points={{
             point1: pages.contact.section.point1,
             point2: pages.contact.section.point2,

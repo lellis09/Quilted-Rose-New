@@ -25,7 +25,7 @@ const Resources = () => {
       /> */}
       <h2 className="text-5xl text-center py-2 text-darkGreen">Recommended Reads</h2>
         <Bullet
-            className="reads lg:relative lg:bottom-[4rem]"
+            className=""
             pointsClassName= "reads-el"
             textClassName="hidden"
             points={         
