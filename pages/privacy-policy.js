@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/sections/hero"
-import { pages } from "/content/content.js"
+import { pages } from "/content/content.jsx"
 import Column1 from "../components/sections/column1"
 import Bullet from "../components/sections/bullet"
 import PrivBullets from "../components/sections/privBullets";

@@ -2,7 +2,7 @@ import react from "react"
 import Hero from "../components/sections/hero"
 import Banner from "../components/sections/banner"
 import LogoContainer from "../components/sections/logo-cont"
-import { pages } from "/content/content.js"
+import { pages } from "/content/content.jsx"
 import Cta from "../components/sections/cta"
 import Column1 from "../components/sections/column1"
 import Column2 from "../components/sections/column2"
@@ -24,9 +24,9 @@ const Services = () => {
             text1={pages.services.about.text1}
             text2={pages.services.about.text2}
       />
-      <div className="flex justify-center pb-8  ">
+      {/* <div className="flex justify-center pb-8  ">
         <Button className="bg-blush w-48 relative ">Book Now</Button>
-      </div>
+      </div> */}
 
       <div className="">
             <Cta

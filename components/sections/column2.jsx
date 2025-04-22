@@ -35,7 +35,7 @@ const Column2 = ({
                 <section className={`w-full ${textClassName}`}>
                     <p className="text-lg pt-4 w-[95%]">{text1}</p>
                     <p className="text-lg pt-4">{text2}</p>
-                    <p className="text-lg pt-4 text-blush">{text3}</p>
+                    <p className="text-lg pt-4 ">{text3}</p>
                 </section>
                 {children && (
                     <div className="pt-6">

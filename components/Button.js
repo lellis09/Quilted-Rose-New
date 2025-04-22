@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 const Button = ({ className = "", children, href }) => {
-  const baseClass = `inline-block px-4 py-2 text-creamy rounded transition-all duration-300 hover:scale-105 hover:shadow-lg ${className}`;
+  const baseClass = `inline-block px-4 py-2 text-creamy text-center rounded transition-all duration-300 hover:scale-105 hover:shadow-lg ${className}`;
 
   if (href) {
     return (

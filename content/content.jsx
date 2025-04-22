@@ -125,7 +125,9 @@ export const pages = {
         faq1:{heading:'What is the length and frequency of our sessions?', subtitle:'50 minutes typically once a week'},
         faq2:{heading:'Are the sessions virtual or in person?', subtitle:'All sessions are virtual'},
         faq3:{heading:'Do you bill insurance?', subtitle:'We no longer accept any form of insurance. All payments are due at the time of service.'},
-        faq4:{heading:'What are your privacy practices?', subtitle:'Our privacy policy can be found here.'},
+        faq4:{heading:'What are your privacy practices?', subtitle: (
+                <>Our privacy policy can be found <a href="/privacy-policy" className="text-sage underline font-bold">here</a>.</>
+              ) },
         cta:{quote:''},
     },
     offer:{
@@ -134,14 +136,17 @@ export const pages = {
                 text1:'Explore the key areas of well-being—Emotional, Environmental, Financial, Intellectual, Physical, Occupational, Social, and Spiritual.', 
                 text2:'Gain insights into each domain and take the first step toward a balanced, healthier life.', 
                 text3:''},
-        section2:{title:'Discover the 8 Domains of Wellness!',
-                text1:'Explore the key areas of well-being—Emotional, Environmental, Financial, Intellectual, Physical, Occupational, Social, and Spiritual.', 
-                text2:'Gain insights into each domain and take the first step toward a balanced, healthier life.', 
-                text3:' '},
-        card1:{title:'', text:''},
-        card2:{title:'', text:''},
-        card3:{title:'', text:''},
-        cta:{quote:''},
+                section2: {
+                        title: 'Continue Your Wellness Journey',
+                        text1: 'Get started with actionable steps and discover resources to support each domain.',
+                        text2: 'Begin your transformation today.',
+                        text3: ''
+                      },
+                      card1: { title: 'Emotional Wellness', text: 'Learn how to nurture your emotional well-being.' },
+                      card2: { title: 'Physical Wellness', text: 'Discover exercises and practices to enhance physical health.' },
+                      card3: { title: 'Social Wellness', text: 'Improve your social connections and community involvement.' },
+                      cta: { quote: 'Start Your Wellness Journey Now' }
+                    
     },
     contact:{
         hero:{title:'Contact Us' },
@@ -165,3 +170,5 @@ export const pages = {
         copyR:{title:'2025', text1:'Quilted Rose Clinical Services-All Rights Reserved'}
     }
 }   
+
+export default pages

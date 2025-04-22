@@ -2,7 +2,7 @@ import React from "react"
 import Hero from "../components/sections/hero"
 import Banner from "../components/sections/banner"
 import LogoContainer from "../components/sections/logo-cont"
-import { pages } from "/content/content.js"
+import { pages } from "/content/content.jsx"
 import Column2 from "../components/sections/column2"
 import Cards2 from "../components/sections/cards2"
 import Cta from "../components/sections/cta"
@@ -31,7 +31,7 @@ const About = () => {
             textClassName="lg:pt-4"
             decClassName="h-[2rem]"
             >
-              <Button className="bg-darkGreen w-48 ">About Dr. Walker</Button>
+              <Button className="bg-darkGreen w-56" href="/contactUs" >Book With Dr. Walker</Button>
             </Column2>
 
           

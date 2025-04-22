@@ -1,7 +1,7 @@
 import react from "react";
 import Image from "next/image";
 import Accordian from "./accordian";
-import { pages } from "../../content/content";
+import { pages } from "../../content/content.jsx";
 import Button from "/components/Button.js"
 
 const ColumnAlt = ({ className="", title, text1, imageSrc,  faqs = [] }) => {
@@ -25,7 +25,7 @@ const ColumnAlt = ({ className="", title, text1, imageSrc,  faqs = [] }) => {
                         <Accordian key={index} className="ser-Border" heading={faq.heading} subtitle={faq.subtitle} />
                     ))}
                     <div className="flex justify-center pt-8 ">
-                        <Button className="bg-blush w-48 mb-4 ">Book Now</Button>
+                        <Button className="bg-blush w-48 mb-4" href="/contactUs">Book Now</Button>
                      </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPlus } from "react-icons/fa6";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Accordian = ({ heading, subtitle, className = "", showIcon = true }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +19,24 @@ const Accordian = ({ heading, subtitle, className = "", showIcon = true }) => {
         onClick={handleToggle}
       >
         <h3 className="text-xl lg:text-2xl text-olive">{heading}</h3>
-        {subtitle && showIcon ? (
-          <FaPlus className="text-olive mt-1" />
-        ) : null}
+        {subtitle && showIcon && (
+          isOpen ? (
+            <FaMinus className="text-olive mt-1" />
+          ) : (
+            <FaPlus className="text-olive mt-1" />
+          )
+        )}
       </div>
 
-      {isOpen && subtitle && (
-        <p className="text-darkGreen pt-2 pr-4 text-left text-sm">{subtitle}</p>
-      )}
+      <div
+        className={`transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "max-h-[500px]" : "max-h-0"
+        }`}
+      >
+        {isOpen && subtitle && (
+          <p className="text-darkGreen pt-2 pr-4 text-left text-sm">{subtitle}</p>
+        )}
+      </div>
     </section>
   );
 };

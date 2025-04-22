@@ -1,7 +1,7 @@
 import react from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-import { pages } from "/content/content.js";
+import { pages } from "/content/content.jsx";
 
 const Banner = ({phone, email}) => {
     return(

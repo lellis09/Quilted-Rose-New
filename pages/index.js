@@ -1,7 +1,7 @@
 import Hero from "../components/sections/hero"
 import Banner from "../components/sections/banner"
 import LogoContainer from "../components/sections/logo-cont"
-import { pages } from "/content/content.js"
+import { pages } from "/content/content.jsx"
 import Column2 from "../components/sections/column2"
 import Cards2 from "../components/sections/cards2"
 import Cta from "../components/sections/cta"
@@ -36,7 +36,7 @@ function Home() {
         textClassName="lg:pt-4 text-darkGreen"
         decClassName="h-[20rem] relative top-2 rotate-x-30"
         >
-        <Button className="bg-darkGreen w-72">More About Dr. Walker</Button>
+        <Button className="bg-darkGreen w-72" href="/about">More About Dr. Walker</Button>
       </Column2>
         {/* <Button className="bg-darkGreen w-48 relative lg:bottom-0 2xl:bottom-15 lg:left-14 xl:left-13 2xl:left-8 mb-4 lg:mb-0">About Dr. Walker</Button> */}
       </div>
@@ -70,7 +70,7 @@ function Home() {
 
       </div>
       <div className="flex justify-center pb-8  ">
-        <Button className="bg-blush w-48 relative ">Learn More</Button>
+        <Button className="bg-blush w-48 relative"href="/services">Learn More</Button>
       </div>
       <div className=" flex flex-col justify-center items-center bg-sage w-full pt-8 md:pt-20 px-6">
         <Column1 
@@ -80,7 +80,7 @@ function Home() {
           text2={pages.offer.section1.text2}
         />
       <div className="flex justify-center pb-8 relative lg:bottom-5 md:bottom-3 -bottom-4">
-        <Button className="bg-blush w-48 relative ">Learn More</Button>
+        <Button className="bg-blush w-48 relative" href="/QR-offer">Learn More</Button>
       </div>
       </div>
       <Cta

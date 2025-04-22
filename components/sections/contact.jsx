@@ -1,6 +1,6 @@
 import react from "react";
 import Image from "next/image";
-import { pages } from "/content/content.js"
+import { pages } from "/content/content.jsx"
 import Button from "../Button.js";
 
 const Contact = ({title}) => {

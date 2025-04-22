@@ -16,7 +16,7 @@ const Cta = ({title}) => {
                     </video> 
 
                 <div className=" border-2 border-creamy w-3/4 h-3/4 relative z-10 flex justify-center items-center rounded-md bg-creamy/10">
-                    <h1 className="text-creamy z-10 text-lg sm:text-2xl md:text-3xl px-10 quote-cta italic">{title}</h1>
+                    <h4 className="text-creamy z-10 text-lg sm:text-2xl md:text-3xl px-10 quote-cta italic">{title}</h4>
                 </div>
         </section>
     )
