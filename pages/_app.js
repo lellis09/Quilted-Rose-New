@@ -4,6 +4,8 @@ import Banner from '../components/sections/banner'
 import {pages} from "../content/content"
 import Footer from '../components/layout/footer'
 import CopyRight from '../components/sections/copyright'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 export default function MyApp({ Component, pageProps }) {

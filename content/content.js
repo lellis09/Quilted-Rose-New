@@ -8,7 +8,7 @@ export const pages = {
         vision:{title:'Our Vision', 
                 text1:'My vision is to collaborate with Black and Indigenous individuals as we navigate everyday challenges—grief and loss, anxiety, political burnout—along with collective trauma and systemic marginalization. I offer several ways to support and partner with you on this journey:', 
                 quote:'“You will be understood and challenged. You will grow and be uncomfortable.” -Dr. Lisa Walker'},
-        card1:{title:'Speaking Engagement', 
+        card1:{title:'Speaking Engagements', 
                 text:'With nearly 20 years of clinical experience, Dr. Walker has worked in various leadership roles across various industries in the health care field. '},
         card2:{title:'Professional Coaching', 
                 text:'Dr. Walker is dedicated to professional coaching, particularly in clinical supervision (LLPC) and guiding individuals and groups through personal and professional growth.'},

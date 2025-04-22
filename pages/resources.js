@@ -46,11 +46,14 @@ const Resources = () => {
             text1={pages.resources.hero.text1}
             text2={pages.resources.hero.text2}
         /> */}
-        <div className="flex flex-wrap justify-center gap-2 py-2">
-            <Column3 
-                images={["/12.svg", "/13.svg", "/14.svg", "/15.svg",]} />
-            <Column3 images={["/16.svg", "/17.svg", "/18.svg"]} />
-            {/* <Column3 images={["/18.svg"]} /> */}
+        <div className="flex flex-wrap justify-center py-8">
+        <Column3
+            images={[
+              "/12.svg", "/13.svg", "/14.svg", "/15.svg",
+              "/16.svg", "/17.svg", "/18.svg"
+            ]}
+            // title="Community Partners"
+          />
         </div>
         <div className=" flex flex-col justify-center items-center border-olive border-t-[2px] border-b-[2px] bg-sage w-full pt-8 md:pt-20 px-6">
         <Column1 
