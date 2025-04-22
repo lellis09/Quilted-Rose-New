@@ -16,11 +16,22 @@ import Image from "next/image"
 function Home() {
  
   return (
-    <main className="flex flex-col "> 
-      
-        
-      
-      <Hero 
+    <main className="flex flex-col relative "> 
+    <div
+    className="absolute inset-0 z-0"
+    style={{
+      backgroundColor: '#fffaf5',
+      backgroundImage: `url("floral-el.svg")`,
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'auto',
+      opacity: 0.09,
+      pointerEvents: 'none'
+    }}
+  />
+  {/* Content layer */}
+  <div className="relative z-10">
+    {/* your page content like <Hero />, <Column2 />, etc. */}
+    <Hero 
         title={pages.home.hero.title} 
         imageSrc={"floral-el.svg"}
         />
@@ -35,6 +46,7 @@ function Home() {
         imageClassName="h-[600px]"
         textClassName="lg:pt-4 text-darkGreen"
         decClassName="h-[20rem] relative top-2 rotate-x-30"
+        className=""
         >
         <Button className="bg-darkGreen w-72" href="/about">More About Dr. Walker</Button>
       </Column2>
@@ -86,12 +98,12 @@ function Home() {
       <Cta
         title={pages.home.cta.quote}
       />
-      <div className="">
+      <div className="bg-pattern  bg-repeat">
         {/* <Image
-            src="/f-bg-svg.svg"
+            src=""
             width={100}
             height={100}
-            className="absolute w-full  z-[-10] opacity-10"
+            className="absolute w-full  z-[-10] "
           /> */}
           <Column1 
             title={pages.home.belief.title}
@@ -99,10 +111,22 @@ function Home() {
             text2={pages.home.belief.text2}
           />
       </div>
-      
+      {/* <div style={{
+  backgroundColor: '#fffaf5',
+  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%230a2522' fill-opacity='0.09'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+  backgroundRepeat: 'repeat'
+}}>
+  
+
+</div> */}
+{/* <div className="bg-[data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%230a2522' fill-opacity='0.09'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E]">
+  <p>Looks good now!</p>
+</div> */}
       <Contact 
         title={pages.home.contact.title}
       />
+  </div>
+      
     </main>
   )
 }
