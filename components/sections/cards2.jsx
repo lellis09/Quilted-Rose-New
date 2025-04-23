@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const Cards2 = ({ title, text, imageSrc }) => {
   const [inView, setInView] = useState(false);
+  const cardRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const card = document.getElementById(title);
-      const cardTop = card.getBoundingClientRect().top;
-      const isVisible = cardTop < window.innerHeight - 100;
-      if (isVisible) {
-        setInView(true);
+      if (cardRef.current) {
+        const cardTop = cardRef.current.getBoundingClientRect().top;
+        const isVisible = cardTop < window.innerHeight - 100;
+        if (isVisible) {
+          setInView(true);
+        }
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    handleScroll(); // Run once on mount
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [title]);
+  }, []);
 
   return (
     <main className="flex justify-center">
       <div
-        id={title}
+        ref={cardRef}
         className={`transition-all duration-500 ease-in-out transform border-2 border-olive w-full md:w-[34rem] lg:w-80 xl:w-96 lg:h-[375px] bg-creamy h-96 flex flex-col justify-center lg:gap-y-6 px-8 rounded-lg py-4 opacity-0 hover:scale-105 hover:shadow-xl ${
           inView ? "opacity-100 translate-y-0" : "translate-y-10"
         }`}
@@ -38,6 +39,7 @@ const Cards2 = ({ title, text, imageSrc }) => {
               width={75}
               height={75}
               className="opacity-50"
+              alt={`${title} icon`} // Always include alt for accessibility
             />
           )}
         </div>
@@ -53,7 +55,6 @@ const Cards2 = ({ title, text, imageSrc }) => {
 };
 
 export default Cards2;
-
 
 
 

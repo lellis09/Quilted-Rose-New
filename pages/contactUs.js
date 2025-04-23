@@ -2,31 +2,33 @@ import React from "react";
 import Hero from "../components/sections/hero"
 import Banner from "../components/sections/banner"
 import LogoContainer from "../components/sections/logo-cont"
-import { pages } from "/content/content.js"
+import { pages } from "/content/content.jsx"
 import Button from "../components/Button"
 import Bullet from "../components/sections/bullet"
 import Contact from "../components/sections/contact"
 
 const ContactUs =() => {
     return(
-        <main className="flex flex-col items-center">
-      <Hero 
-        title={pages.contact.hero.title} 
-        imageSrc={"floral-el.svg"}
-      />
+        <main className="flex flex-col items-center relative">
+            <div className="absolute inset-0 z-[-1] background">
+            </div>
+                <Hero 
+                    title={pages.contact.hero.title} 
+                    imageSrc={"floral-el.svg"}
+                />
 
-    <Bullet
-        className=" w-full lg:w-1/2  lg:px-24"
-        points={{
-            point1: pages.contact.section.point1,
-            point2: pages.contact.section.point2,
-            point3: pages.contact.section.point3,
-            
-        }}
-    />
-    <Contact
-        title={pages.home.contact.title}
-    />
+                <Bullet
+                    className=" w-full lg:w-1/2  lg:px-24"
+                    points={{
+                        point1: pages.contact.section.point1,
+                        point2: pages.contact.section.point2,
+                        point3: pages.contact.section.point3,
+                        
+                    }}
+                />
+                <Contact
+                    title={pages.home.contact.title}
+                />
         </main>
     )
 }

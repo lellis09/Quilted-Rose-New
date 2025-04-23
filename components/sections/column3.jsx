@@ -1,8 +1,30 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import { FaArrowAltCircleRight } from "react-icons/fa"
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
-const Column3 = ({ images = [], title }) => {
+// Custom arrow components styled to match your brand
+const CustomPrevArrow = ({ className, onClick }) => (
+  <div
+    className={`${className} !left-0 lg:!left-[-2rem] z-10 w-12 h-12 bg-olive/90 rounded-full flex items-center justify-center hover:bg-olive transition-all cursor-pointer`}
+    onClick={onClick}
+  >
+    <FaArrowAltCircleLeft className="text-blush text-3xl" />
+  </div>
+);
+
+const CustomNextArrow = ({ className, onClick }) => (
+  <div
+    className={`${className} !right-0 z-10 w-12 h-12 bg-olive/90 rounded-full flex items-center justify-center hover:bg-olive transition-all cursor-pointer`}
+    onClick={onClick}
+  >
+    <FaArrowAltCircleRight className="text-blush text-3xl" />
+  </div>
+);
+
+// Updated component accepts an optional `links` array
+const Column3 = ({ images = [], title, links = [] }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,6 +34,8 @@ const Column3 = ({ images = [], title }) => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "ease-in-out",
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -25,21 +49,16 @@ const Column3 = ({ images = [], title }) => {
           slidesToShow: 2,
         },
       },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
     ],
   };
 
   return (
     <main className="w-full max-w-5xl mx-auto px-4">
-      {title && <h2 className="text-2xl text-center mb-4">{title}</h2>}
+      {title && <h2 className="text-2xl text-center mb-4 text-darkGreen">{title}</h2>}
       <Slider {...settings}>
-        {images.map((src, index) => (
-          <div key={index} className="px-2 flex justify-center transition-opacity duration-500 ease-in-out">
+        {images.map((src, index) => {
+          const hasLink = links[index];
+          const imageElement = (
             <div className="relative w-32 h-32 md:w-40 md:h-40">
               <Image
                 src={src}
@@ -49,66 +68,23 @@ const Column3 = ({ images = [], title }) => {
                 className="rounded-lg object-cover"
               />
             </div>
-          </div>
-        ))}
+          );
+
+          return (
+            <div key={index} className="px-2 flex justify-center transition-opacity duration-500 ease-in-out">
+              {hasLink ? (
+                <a href={links[index]} target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+                  {imageElement}
+                </a>
+              ) : (
+                imageElement
+              )}
+            </div>
+          );
+        })}
       </Slider>
     </main>
   );
 };
 
 export default Column3;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// OLD LAYOUT
-
-// import react from "react";
-// import Image from "next/image";
-// import { pages } from "/content/content.js"
-
-// const Column3 = ({ images = [], title }) => {
-//     return(
-//         <main className="">
-//             <h2>{title}</h2>
-//             <div className="grid grid-cols-4 gap-6 w-full">
-//                 {images.map((src, index) => (
-//                     <div key={index} className="relative w-32 h-32 md:w-40 md:h-40">
-//                         <Image src={src} alt={`Image ${index + 1}`} layout="intrinsic" width={150} height={150} objectFit="cover" className="rounded-lg" />
-//                     </div>
-//                 ))}
-//             </div>
-            {/* <section className="w-full h-full">
-                <div className={`w-full md:w-1/2 lg:w-1/3 h-20`}>
-                        <Image src={imageSrc1} alt="title" layout="fill" objectFit= "cover" className="" />         
-                </div>
-                <div className={`w-full md:w-1/2 lg:w-1/3 h-20`}>
-                        <Image src={imageSrc2} alt="title" layout="fill" objectFit= "cover" className="" />         
-                </div>
-                <div className={`w-full md:w-1/2 lg:w-1/3 h-20`}>
-                        <Image src={imageSrc3} alt="title" layout="fill" objectFit= "cover" className="" />         
-                </div>
-            </section>
-            <section>
-            </section> */}
-        {/* </main>
-    )
-} */}
-
-{/* export default Column3 */}

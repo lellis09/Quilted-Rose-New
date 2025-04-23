@@ -10,38 +10,40 @@ import Button from "../components/Button"
 
 const Faq = () => {
     return(
-        <main className="flex flex-col">
-      <Hero 
-            title={pages.faq.hero.title} 
-            imageSrc={"floral-el.svg"}
-        />
-        <Column1 
-            className="partner-title"
-            title={pages.faq.header.title}
-            text1={pages.resources.hero.text1}
-            text2={pages.resources.hero.text2}
-      />
-      <ColumnAlt 
-            className="border-t-[2px] border-b-[2px] border-olive "
-            title={pages.resources.hero.text1}
-            text1={pages.faq.header.text1}
-            text2={pages.home.about.text2}
-            text3={pages.home.about.text3}
-            imageSrc={"/lisa-walker-1.png"}
-            faqs={[
-                { heading: pages.faq.faq1.heading, subtitle: pages.faq.faq1.subtitle },
-                { heading: pages.faq.faq2.heading, subtitle: pages.faq.faq2.subtitle },
-                { heading: pages.faq.faq3.heading, subtitle: pages.faq.faq3.subtitle },
-                { heading: pages.faq.faq4.heading, subtitle: pages.faq.faq4.subtitle },
-                
-            ]
-        }
-        />
-        <div className="pt-0">
-            <Cta
-                title={pages.home.cta.quote}
-            />
+        <main className="flex flex-col relative">
+        <div className="absolute inset-0 z-[-1] background">
         </div>
+            <Hero 
+                    title={pages.faq.hero.title} 
+                    imageSrc={"floral-el.svg"}
+                />
+                <Column1 
+                    className="partner-title bg-creamy"
+                    title={pages.faq.header.title}
+                    text1={pages.resources.hero.text1}
+                    text2={pages.resources.hero.text2}
+            />
+            <ColumnAlt 
+                    className="border-t-[2px] border-b-[2px] border-olive "
+                    title={pages.resources.hero.text1}
+                    text1={pages.faq.header.text1}
+                    text2={pages.home.about.text2}
+                    text3={pages.home.about.text3}
+                    imageSrc={"/lisa-walker-1.png"}
+                    faqs={[
+                        { heading: pages.faq.faq1.heading, subtitle: pages.faq.faq1.subtitle },
+                        { heading: pages.faq.faq2.heading, subtitle: pages.faq.faq2.subtitle },
+                        { heading: pages.faq.faq3.heading, subtitle: pages.faq.faq3.subtitle },
+                        { heading: pages.faq.faq4.heading, subtitle: pages.faq.faq4.subtitle },
+                        
+                    ]
+                }
+                />
+                <div className="pt-0">
+                    <Cta
+                        title={pages.home.cta.quote}
+                    />
+                </div>
         </main>
     )
 }
