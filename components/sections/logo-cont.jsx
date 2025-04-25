@@ -7,7 +7,8 @@ const LogoContainer = () => {
     <section className="relative w-full bg-creamy flex flex-col items-center lg:h-56">
       {/* Logo Image */}
       <div className="w-96 h-64 flex justify-center relative">
-        <Image src={"/qr-logo.svg"} width={200} height={200} className="object-contain" />
+        <a href="/"> <Image src={"/qr-logo.svg"} width={200} height={200} className="object-contain" /></a>
+        
       </div>
 
       {/* Navigation */}

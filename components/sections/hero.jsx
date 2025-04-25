@@ -19,7 +19,7 @@ const Hero = ({ title, imageSrc }) => {
       />
       
       {/* Content inside the Hero Section */}
-      <div className="border-2 border-creamy w-3/4 h-3/4 relative z-10 flex flex-col justify-center items-center rounded-md bg-creamy/10">
+      <div className="border-2 border-creamy w-3/4 h-3/4 relative z-10 flex flex-col justify-center items-center rounded-md bg-creamy/15">
         <div className="flex justify-center items-center">
           {imageSrc && (
             <Image

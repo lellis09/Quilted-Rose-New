@@ -33,7 +33,7 @@ export const pages = {
         card1:{title:'', text:''},
         card2:{title:'', text:''},
         card3:{title:'', text:''},
-        cta:{quote:'I will focus on your strengths even if you do not see any." - Dr. Lisa Walker'},
+        cta:{quote:'"I will focus on your strengths even if you do not see any." - Dr. Lisa Walker'},
     },
     resources:{
         hero:{title:'Resources', 
@@ -49,6 +49,8 @@ export const pages = {
             point5:'Hood Feminism-Mikki Kendall', 
             point6:'Kindred-Octavia E. Butler', 
             point7:'My Grandmother"s Hands-Resmaa Menakem',},
+        other:{point1:(<a href="https://beam.community/wellness-tools/" target="_blank" className="underline text-darkGreen">'BEAM-Black Emotional and Mental Health Collective'</a>), 
+            point2:(<a href="https://www.melaneyesmedia.com/" target="_blank" className="underline text-darkGreen">'Melaneyes Media-Knowledge based Black Films & Video'</a>) },
         cta:{quote:''},
     },
     services:{
@@ -68,7 +70,7 @@ export const pages = {
                 point8:'Limited Licensed Professional Counselor Supervision',
                 point9:'',
                 text2:'Feel free to get in touch with me. If you want to discover more ways that we can work together take a look below:'}, 
-        cta:{quote:''},
+        cta:{quote:'"It is the mind that makes the body." - Sojourner Truth'},
         other:{title:'Other Ways to Work With Me', 
                 text1:''},
         contact:{title:''},
@@ -131,21 +133,21 @@ export const pages = {
         cta:{quote:''},
     },
     offer:{
-        hero:{title:'' },
+        hero:{title:'Journey To Wellness Workbook' },
         section1:{title:'Discover the 8 Domains of Wellness!',
                 text1:'Explore the key areas of well-being—Emotional, Environmental, Financial, Intellectual, Physical, Occupational, Social, and Spiritual.', 
                 text2:'Gain insights into each domain and take the first step toward a balanced, healthier life.', 
                 text3:''},
                 section2: {
-                        title: 'Continue Your Wellness Journey',
-                        text1: 'Get started with actionable steps and discover resources to support each domain.',
-                        text2: 'Begin your transformation today.',
+                        title: 'Explore a New Path on Your Wellness Journey',
+                        text1: 'Take the first step toward a more balanced life with practical tips and curated resources designed to support every dimension of your well-being—Emotional, Environmental, Financial, Intellectual, Physical, Occupational, Social, and Spiritual.',
+                        text2: 'Begin your transformation today!',
                         text3: ''
                       },
                       card1: { title: 'Emotional Wellness', text: 'Learn how to nurture your emotional well-being.' },
                       card2: { title: 'Physical Wellness', text: 'Discover exercises and practices to enhance physical health.' },
                       card3: { title: 'Social Wellness', text: 'Improve your social connections and community involvement.' },
-                      cta: { quote: 'Start Your Wellness Journey Now' }
+                      cta: { quote: 'Get Started to a Healthier Start Your Wellness Journey Now' }
                     
     },
     contact:{

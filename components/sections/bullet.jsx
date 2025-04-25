@@ -35,7 +35,7 @@ const Bullet = ({ text1, text2, points = {}, className = "", pointsClassName = "
           ))}
         </div>
   
-        <p className={` ${textClassName}text-creamy text-center text-lg py-8`}>{text2}</p>
+        <p className={` ${textClassName}text-creamy text-center text-lg py-8 text-darkGreen`}>{text2}</p>
       </main>
     );
   };

@@ -38,7 +38,7 @@ const Cards2 = ({ title, text, imageSrc }) => {
               src={imageSrc}
               width={75}
               height={75}
-              className="opacity-50"
+              className="opacity-75"
               alt={`${title} icon`} // Always include alt for accessibility
             />
           )}
