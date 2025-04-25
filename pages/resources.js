@@ -51,7 +51,11 @@ const Resources = () => {
                     point4: pages.resources.books.point4,
                     point5: pages.resources.books.point5,
                     point6: pages.resources.books.point6,
-                    point7: pages.resources.books.point7
+                    point7: pages.resources.books.point7,
+                    point8: pages.resources.books.point8,
+                    point9: pages.resources.books.point9,
+                    point10: pages.resources.books.point10,
+                    point11: pages.resources.books.point11,
                 }}
             />
             
