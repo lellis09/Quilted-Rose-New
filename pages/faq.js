@@ -22,6 +22,7 @@ const Faq = () => {
                     title={pages.faq.header.title}
                     text1={pages.resources.hero.text1}
                     text2={pages.resources.hero.text2}
+                    subTClassName="hidden"
             />
             <ColumnAlt 
                     className="border-t-[2px] border-b-[2px] border-olive "

@@ -99,6 +99,7 @@ function Home() {
                   title={pages.home.belief.title}
                   text1={pages.home.belief.text1}
                   text2={pages.home.belief.text2}
+                  subTClassName="hidden"
                 />
             </div>
             {/* <div style={{

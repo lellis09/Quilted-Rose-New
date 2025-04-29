@@ -18,23 +18,27 @@ const Privacy = () =>{
                     className="reads-title"
                     title={pages.privacy.section1.title}
                     text1={pages.privacy.section1.text1}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="vision"
                     title={pages.privacy.policy1.title}
                     text1={pages.privacy.policy1.text1}
                     text2={pages.privacy.policy1.text2}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="reads-title "
                     title={pages.privacy.policy2.title}
                     text1={pages.privacy.policy2.text1}
                     text2={pages.privacy.policy2.text2}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="vision"
                     title={pages.privacy.policy3.title}
                     text1={pages.privacy.policy3.text1}
+                    subTClassName="hidden"
                 >
                     <PrivBullets
                         className="pt-0  px-24  w-3/4"
@@ -55,6 +59,7 @@ const Privacy = () =>{
                     title={pages.privacy.policy4.title}
                     text1={pages.privacy.policy4.text1}
                     text2={pages.privacy.policy4.text2}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="vision"
@@ -62,6 +67,7 @@ const Privacy = () =>{
                     text1={pages.privacy.policy5.text1}
                     text2={pages.privacy.policy5.text2}
                     text3={pages.privacy.policy5.text3}
+                    subTClassName="hidden"
                     >
                     <Bullet
                         className="pt-0"
@@ -78,16 +84,19 @@ const Privacy = () =>{
                     className="reads-title "
                     title={pages.privacy.policy6.title}
                     text1={pages.privacy.policy6.text1}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="vision"
                     title={pages.privacy.policy7.title}
                     text1={pages.privacy.policy7.text1}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="reads-title "
                     title={pages.privacy.policy8.title}
                     text1={pages.privacy.policy8.text1}
+                    subTClassName="hidden"
                 />
                 <Column1 
                     className="vision"
@@ -95,6 +104,7 @@ const Privacy = () =>{
                     text1={pages.privacy.policy9.text1}
                     text2={pages.privacy.policy9.text2}
                     text3={pages.privacy.policy9.text3}
+                    subTClassName="hidden"
                 />
         </main>
     )

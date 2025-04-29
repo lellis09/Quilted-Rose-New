@@ -24,6 +24,7 @@ const Services = () => {
                   title={pages.services.about.title}
                   text1={pages.services.about.text1}
                   text2={pages.services.about.text2}
+                  subTClassName="hidden"
             />
             {/* <div className="flex justify-center pb-8  ">
               <Button className="bg-blush w-48 relative ">Book Now</Button>

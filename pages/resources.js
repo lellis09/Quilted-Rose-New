@@ -72,6 +72,7 @@ const Resources = () => {
               title={pages.offer.section1.title}
               text1={pages.offer.section1.text1}
               text2={pages.offer.section1.text2}
+              subTClassName="hidden"
             />
           <div className="flex justify-center pb-8 relative lg:bottom-5 md:bottom-3 -bottom-4">
             <Button className="bg-blush w-48 relative " href="/QR-offer">Learn More</Button>
