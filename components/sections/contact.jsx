@@ -31,12 +31,12 @@ const Contact = ({title}) => {
                     className="w-full flex flex-col gap-y-4"
                     >
                     <input type="hidden" name="form-name" value="contact" />
-
+{/* 
                     <p className="hidden">
                         <label>
-                        Don’t fill this out: <input name="bot-field" />
+                        Don't fill this out: <input name="bot-field" />
                         </label>
-                    </p>
+                    </p> */}
 
                     <input
                         type="text"
