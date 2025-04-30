@@ -22,23 +22,43 @@ const Contact = ({title}) => {
             <section className="flex flex-col bg-olive items-center px-10 gap-y-6 w-full h-[500px] md:w-[60%] justify-center">
                 <h2 className="text-creamy text-5xl pt-6">{title}</h2>
 
-                <form className="w-full flex flex-col gap-y-4" netlify>
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    className="w-full flex flex-col gap-y-4"
+                    >
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <p className="hidden">
+                        <label>
+                        Don’t fill this out: <input name="bot-field" />
+                        </label>
+                    </p>
+
                     <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="bg-creamy w-full h-12 rounded-md px-4"
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        className="bg-creamy w-full h-12 rounded-md px-4"
+                        required
                     />
                     <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="bg-creamy w-full h-12 rounded-md px-4"
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        className="bg-creamy w-full h-12 rounded-md px-4"
+                        required
                     />
                     <textarea
-                    placeholder="Your Message"
-                    className="bg-creamy w-full h-40 rounded-md px-4 py-2 resize-none"
+                        name="message"
+                        placeholder="Your Message"
+                        className="bg-creamy w-full h-40 rounded-md px-4 py-2 resize-none"
+                        required
                     />
                     <Button type="submit" className="bg-blush w-48 self-center mt-2">
-                    Get In Touch
+                        Get In Touch
                     </Button>
                 </form>
         </section>
