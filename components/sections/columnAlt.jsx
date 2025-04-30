@@ -6,10 +6,10 @@ import Button from "/components/Button.js"
 
 const ColumnAlt = ({ className="", title, text1, imageSrc,  faqs = [] }) => {
     return(
-        <main className={`flex flex-col items-center lg:flex-row ${className} lg:pr-10 h-full lg:h-fit w-full`}>
-            <div className="relative w-[75%] lg:w-[35%] h-[500px] lg:min-h-screen overflow-hidden">
-              <div className={`w-full h-auto border-red-300 border-4 ${className} `}>
-                    <Image src={imageSrc} alt="title" layout="fill" objectFit= "cover" className="w-full h-full"  />         
+        <main className={`flex flex-col items-center lg:flex-row ${className} lg:pr-10 h-full lg:h-fit w-full `}>
+            <div className="relative w-[75%] lg:w-[35%] h-[500px] lg:min-h-screen overflow-hidden  bg-darkGreen">
+              <div className={`w-full h-auto border-red-300 border-4 ${className} opacity-85 `}>
+                    <Image src={imageSrc} alt="title" layout="fill" objectFit= "cover" className="w-full h-full absolute"  />         
                 </div>
                              
             </div>

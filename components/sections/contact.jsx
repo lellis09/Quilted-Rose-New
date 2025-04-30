@@ -19,16 +19,29 @@ const Contact = ({title}) => {
                 
                 />
             </div>
-            <section className=" flex flex-col bg-olive items-center px-10 gap-y-6 w-full h-[500px] md:w-[60%] justify-center">
-                <h2 className="text-creamy text-5xl pt-6">{title}</h2>
-                <form>
-                    
-                </form>
-                <input className="bg-creamy w-full h-12 rounded-md"/>
-                <input className="bg-creamy w-full h-12 rounded-md"/>
-                <textarea className="bg-creamy w-full h-40 rounded-md"/>
-                <Button className="bg-blush w-48 mb-4">Book Now</Button>
-            </section>
+            <section className="flex flex-col bg-olive items-center px-10 gap-y-6 w-full h-[500px] md:w-[60%] justify-center">
+  <h2 className="text-creamy text-5xl pt-6">{title}</h2>
+
+  <form className="w-full flex flex-col gap-y-4">
+    <input
+      type="text"
+      placeholder="Your Name"
+      className="bg-creamy w-full h-12 rounded-md px-4"
+    />
+    <input
+      type="email"
+      placeholder="Your Email"
+      className="bg-creamy w-full h-12 rounded-md px-4"
+    />
+    <textarea
+      placeholder="Your Message"
+      className="bg-creamy w-full h-40 rounded-md px-4 py-2 resize-none"
+    />
+    <Button type="submit" className="bg-blush w-48 self-center mt-2">
+      Get In Touch
+    </Button>
+  </form>
+</section>
             
         </main>
     )

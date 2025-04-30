@@ -30,7 +30,7 @@ const Faq = () => {
                     text1={pages.faq.header.text1}
                     text2={pages.home.about.text2}
                     text3={pages.home.about.text3}
-                    imageSrc={"/lisa-walker-1.png"}
+                    imageSrc={"/pexels-floral-3.jpg"}
                     faqs={[
                         { heading: pages.faq.faq1.heading, subtitle: pages.faq.faq1.subtitle },
                         { heading: pages.faq.faq2.heading, subtitle: pages.faq.faq2.subtitle },
@@ -42,7 +42,7 @@ const Faq = () => {
                 />
                 <div className="pt-0">
                     <Cta
-                        title={pages.home.cta.quote}
+                        title={pages.faq.cta.quote}
                     />
                 </div>
         </main>

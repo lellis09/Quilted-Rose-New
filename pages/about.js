@@ -53,7 +53,8 @@ const About = () => {
               text7={pages.about.values.text7}
               text8={pages.about.values.text8}
               pClassName="text-[15px] text-left"
-              specialClassName="text-darkGreen special text-xl text-left"
+              subTClassName="text-left"
+              specialClassName="text-darkGreen special text-xl text-left leading-10"
             />
 
             <div className="flex flex-col gap-y-8 lg:flex-row lg:gap-x-8 relative md:items-center lg:justify-center items-stretch pb-4 z-10 bottom-6 lg:bottom-12 px-10 ">

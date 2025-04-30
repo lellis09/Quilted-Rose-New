@@ -29,8 +29,8 @@ const LandingPage = () => {
             <h2 className="text-5xl font-semibold">{pages.offer.section2.title}</h2>
             <p className="text-lg mt-4">{pages.offer.section2.text1}</p>
             <p className="text-lg mt-4">{pages.offer.section2.text2}</p>
-            <Button className="bg-blush w-48 mt-8" href="/start-now">
-              Get Started
+            <Button className="bg-blush w-48 mt-8" href="/contactUs">
+            Join Waitlist
             </Button>
           </section>
 
