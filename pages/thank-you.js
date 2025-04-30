@@ -3,11 +3,10 @@ import { pages } from "/content/content.jsx";  // Import content data from conte
 import Image from "next/image";
 import Button from "../components/Button";
 
-const ThankYou = () => {
+export default function ThankYou() {
     return (
-        <main>
-            Thank you!
-        </main>
-    )
-}
-export default ThankYou
+      <div className="min-h-screen flex justify-center items-center bg-olive text-creamy">
+        <h1 className="text-3xl">Thanks for your message! We'll be in touch soon.</h1>
+      </div>
+    );
+  }

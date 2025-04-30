@@ -29,6 +29,8 @@ export default function MyApp({ Component, pageProps }) {
         title={pages.copyright.copyR.title}
         text1={pages.copyright.copyR.text1}
       />
+      {/* Hidden link to force __forms.html to be included in the build */}
+<link rel="prefetch" href="/__forms.html" as="document" />
   </>
 
   ) 
