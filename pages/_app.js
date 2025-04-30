@@ -30,7 +30,7 @@ export default function MyApp({ Component, pageProps }) {
         text1={pages.copyright.copyR.text1}
       />
       {/* Hidden link to force __forms.html to be included in the build */}
-<link rel="prefetch" href="/__forms.html" as="document" />
+      <link rel="prefetch" href="/forms-detect.html" as="document" />
   </>
 
   ) 
