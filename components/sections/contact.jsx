@@ -26,8 +26,8 @@ const Contact = ({title}) => {
                 <form
                     name="contact"
                     method="POST"
-                    action="/favicon.ico"
-                    netlify-honeypot="bot-field"
+                    action="/public/thank-you.html"
+                    // netlify-honeypot="bot-field"
                     className="w-full flex flex-col gap-y-4"
                     >
                     <input type="hidden" name="form-name" value="contact" />
