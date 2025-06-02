@@ -1,16 +1,27 @@
 import '../global.css'
 import LogoContainer from '../components/sections/logo-cont'
+import {useRouter} from 'next/router';
 import Banner from '../components/sections/banner'
 import {pages} from "../content/content"
 import Footer from '../components/layout/footer'
 import CopyRight from '../components/sections/copyright'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const baseUrl = 'https://www.quiltedrose.org';
   return(
   <>
+    {/* Canonical Tage */}
+    <Head>
+      <link
+      rel="canonical"
+      href={`${baseUrl}${router.asPath === '/' ? '' : router.asPath}}`}
+      />
+    </Head>
     <header className='w-full'>
       <Banner
           email={pages.banner.email.email} 

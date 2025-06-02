@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.quiltedrose.org
+
+# Sitemaps
+Sitemap: https://www.quiltedrose.org/sitemap.xml
