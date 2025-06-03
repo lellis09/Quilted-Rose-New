@@ -8,7 +8,7 @@ import CopyRight from '../components/sections/copyright'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Head from 'next/head'
-import { useRouter } from 'next/router'
+
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
