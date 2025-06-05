@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.quiltedrose.org',
+  siteUrl: 'https://quiltedrose.org', // ✅ no "www"
   generateRobotsTxt: true,
   sitemapSize: 7000,
-  outDir: 'public', // 💡 Add this
+  outDir: 'public', // Make sure the sitemap and robots.txt go into /public
 };

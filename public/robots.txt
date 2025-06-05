@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.quiltedrose.org
+Host: https://quiltedrose.org
 
 # Sitemaps
-Sitemap: https://www.quiltedrose.org/sitemap.xml
+Sitemap: https://quiltedrose.org/sitemap.xml
