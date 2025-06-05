@@ -11,6 +11,12 @@
     Content-Type = "application/xml"
 
 [[redirects]]
+  from = "https://www.quiltedrose.org/*"
+  to = "https://quiltedrose.org/:splat"
+  status = 301
+  force = true    
+
+[[redirects]]
   from = "/index.html"
   to = "/"
   status = 301
