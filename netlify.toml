@@ -2,6 +2,9 @@
   publish = ".next"
   command = "npm run build"
 
+  [plugins]
+  package = "@netlify/plugin-nextjs"
+
 [[redirects]]
   from = "/index.html"
   to = "/"
