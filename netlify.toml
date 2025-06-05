@@ -5,6 +5,11 @@
   [plugins]
   package = "@netlify/plugin-nextjs"
 
+  [[headers]]
+  for = "/*.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+
 [[redirects]]
   from = "/index.html"
   to = "/"
