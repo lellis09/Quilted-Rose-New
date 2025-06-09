@@ -12,16 +12,16 @@ import Head from 'next/head'
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const baseUrl = 'https://www.quiltedrose.org';
+  const baseUrl = 'https://quiltedrose.org';
   return(
   <>
     {/* Canonical Tage */}
     <Head>
-      <link
-      rel="canonical"
-      href={`${baseUrl}${router.asPath === '/' ? '' : router.asPath}}`}
-      />
-    </Head>
+  <link
+    rel="canonical"
+    href={`${baseUrl}${router.asPath === '/' ? '' : router.asPath}`}
+  />
+</Head>
     <header className='w-full'>
       <Banner
           email={pages.banner.email.email} 
