@@ -28,6 +28,21 @@
   status = 301
 
 [[redirects]]
+  from = "/resources.html"
+  to = "/resources"
+  status = 301
+
+[[redirects]]
+  from = "/internships.html"
+  to = "/resources"
+  status = 301
+
+[[redirects]]
+  from = "/our-process.html"
+  to = "/about"
+  status = 301
+
+[[redirects]]
   from = "/aboutUs.html"
   to = "/about"
   status = 301
@@ -41,9 +56,29 @@
   from = "/about.html"
   to = "/about"
   status = 301
+
+[[redirects]]
+  from = "/work-with-dr.walker.html"
+  to = "/about"
+  status = 301
   
 [[redirects]]
-  from = "/Why-quiled-rose.html.html"
+  from = "/Why-quiled-rose.html"
   to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/why-quiled-rose"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy.html"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contactUs"
   status = 301
 
