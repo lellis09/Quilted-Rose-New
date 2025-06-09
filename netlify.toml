@@ -61,6 +61,11 @@
   from = "/work-with-dr.walker.html"
   to = "/about"
   status = 301
+
+[[redirects]]
+  from = "/work-with-dr.walker"
+  to = "/about"
+  status = 301
   
 [[redirects]]
   from = "/Why-quiled-rose.html"
