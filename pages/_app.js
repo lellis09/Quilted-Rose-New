@@ -24,8 +24,10 @@ export default function MyApp({ Component, pageProps }) {
 </Head>
     <header className='w-full'>
       <Banner
+          // message={pages.banner.message.text}
           email={pages.banner.email.email} 
           phone={pages.banner.phone.phone}
+          
       />
       <LogoContainer />
     </header>

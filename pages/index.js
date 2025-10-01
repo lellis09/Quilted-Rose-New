@@ -32,9 +32,11 @@ function Home() {
               text1={pages.home.about.text1}
               text2={pages.home.about.text2}
               text3={pages.home.about.text3}
+              text4={pages.home.about.text4}
               imageSrc={"/lisa-walker-1.png"}
               imageClassName="h-[600px]"
               textClassName="lg:pt-4 text-darkGreen"
+              text4ClassName="lg:pt-4 text-darkGreen font-bold "
               decClassName="h-[20rem] relative top-2 rotate-x-30"
               className=""
               >

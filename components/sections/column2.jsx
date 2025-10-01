@@ -9,10 +9,12 @@ const Column2 = ({
     text1, 
     text2, 
     text3,
+    text4,
     imageSrc, 
     quote, 
     imageClassName ="", 
     textClassName ="",
+    text4ClassName ="",
     decClassName = "",
     children, // Add this
 }) => {
@@ -36,6 +38,7 @@ const Column2 = ({
                     <p className="text-lg pt-4 w-[95%]">{text1}</p>
                     <p className="text-lg pt-4">{text2}</p>
                     <p className="text-lg pt-4 ">{text3}</p>
+                    <p className={`text-lg pt-4 ${text4ClassName} `}>{text4}</p>
                 </section>
                 {children && (
                     <div className="pt-6">

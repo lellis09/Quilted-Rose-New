@@ -4,7 +4,8 @@ export const pages = {
         about:{title:'Meet Dr. Lisa Walker', 
                 text1:'I\'m Dr. Lisa Walker, a psychologist and licensed mental health counselor (LPC) with more than 20 years of experience. I respect the individual as part of the collective community. I believe that healing or mental health treatment cannot occur alone. Black and Indigenous people heal in community.', 
                 text2:'I intentionally serve all Black and Indigenous adults with reverence and compassion. I place a special emphasis on emotionally supporting female-identifying persons who work in the creative, health care, mental health and education fields.',
-                text3:'I work collaboratively with individuals navigating the impact of cultural trauma, newly diagnosed adult ADHD (at 30, 40, 50+), disordered eating and complex relationships with food or movement, and the unique experiences of transracial adoptees coming to terms with their upbringing. This space is also open for exploring whatever else you’re ready to unpack—with compassion and care.'},
+                text3:'I work collaboratively with individuals navigating the impact of cultural trauma, newly diagnosed adult ADHD (at 30, 40, 50+), disordered eating and complex relationships with food or movement, and the unique experiences of transracial adoptees coming to terms with their upbringing. This space is also open for exploring whatever else you’re ready to unpack—with compassion and care.',
+                text4:'Quilted Rose Clinical Services is not accepting new clients at this time. We deeply appreciate your interest and support, and we encourage you to check back for future updates.'},
         vision:{title:'Our Vision', 
                 text1:'My vision is to collaborate with Black and Indigenous individuals as we navigate everyday challenges—grief and loss, anxiety, political burnout—along with collective trauma and systemic marginalization. I offer several ways to support and partner with you on this journey:', 
                 quote:'“You will be understood and challenged. You will grow and be uncomfortable.” -Dr. Lisa Walker'},
@@ -67,8 +68,8 @@ export const pages = {
         hero:{title:'Services'},
         about:{title:'Therapy',
              text1:'Are you an African, Black American, or Indigenous person looking to integrate traditional spiritual practices into your mental wellness or coaching journey in a safe and intentional way?',
-             text2:'When working with me, you are welcomed and encouraged to incorporate or explore traditional spiritual practices (Ifa, ancestral veneration, altar building, vision boards, tarot, crystals, essential oils, astrology) into therapy or coaching',
-             text3:'Are you an African, Black American, or Indigenous person looking to integrate traditional spiritual practices into your mental wellness or coaching journey in a safe and intentional way?'},
+             text2:'When working with me, you are welcomed and encouraged to incorporate or explore traditional spiritual practices (Ifa, ancestral veneration, altar building, vision boards, tarot, crystals, essential oils, astrology) into therapy or coaching.',
+             text3:'Quilted Rose Clinical Services is not accepting new clients at this time. We deeply appreciate your interest and support, and we encourage you to check back for future updates.'},
         bullet:{text1:'My services extend beyond individuals. If you\'re a non-profit organization, corporation, or political office looking for:',
                 point1:'General guidance', 
                 point2:'Burn out prevention & Recovery', 
@@ -162,7 +163,8 @@ export const pages = {
     },
     contact:{
         hero:{title:'Contact Us' },
-        section:{point1:'2200 Hunt St. #415 Detroit, MI 48207',
+        section:{text1:'Quilted Rose Clinical Services is not accepting new clients at this time. We deeply appreciate your interest and support, and we encourage you to check back for future updates.',
+                point1:'2200 Hunt St. #415 Detroit, MI 48207',
                 point2:'313-403-3900',
                 point3:'drlisa@quiltedrose.org'
         },
@@ -172,6 +174,7 @@ export const pages = {
     banner:{
         phone:{phone:'313-403-3900'},
         email:{email:'drlisa@quiltedrose.org'},
+        message:{text:'Attention: I am no longer accepting new clients'},
     },
     footer:{
         address:{title:''},

@@ -24,6 +24,8 @@ const Services = () => {
                   title={pages.services.about.title}
                   text1={pages.services.about.text1}
                   text2={pages.services.about.text2}
+                  text3={pages.services.about.text3}
+                  textClassName="font-bold"
                   subTClassName="hidden"
             />
             {/* <div className="flex justify-center pb-8  ">
